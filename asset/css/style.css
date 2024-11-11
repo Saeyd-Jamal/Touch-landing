@@ -1,0 +1,93 @@
+/* Global Styles */
+:root {
+    --main-color: #50ADA3;
+    --second-color: #43516D;
+    --dark-color: #343434;
+    --graye-color: #EBEBEB;
+    --d-color: #D2D2D2;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* edit input in forms */
+[data-twe-input-notch-ref] {
+    direction: rtl;
+}
+[data-twe-input-notch-leading-ref]
+{
+    border-radius: 0 30px 30px 0;
+}
+[data-twe-input-notch-trailing-ref]{
+    border-radius: 25px 0 0 25px;
+}
+
+/* الشكل السداسي الخاص في الصورة الكبيرة المقطعة */
+.img-about .hexagon-container {
+    position: relative;
+    width: 620px;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:  rotate(-90deg);
+}
+
+/* العنصر الداخلي مع خلفية بيضاء */
+.img-about .hexagon-container .hexagon-content {
+    width: 530px;
+    height: 530px;
+    background-color: #ffffff;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* شكل سداسي للارقام والمحتوى البسيط */
+.contant-hexagon .hexagon-container {
+    position: relative;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:  rotate(-90deg);
+}
+
+/* العنصر ال داخلي مع خلفية بيضاء */
+.contant-hexagon .hexagon-container .hexagon-content {
+    width: 220px;
+    height: 230px;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+

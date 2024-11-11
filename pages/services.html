@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Touch</title>
+    <link rel="shortcut icon" href="../asset/img/icon.png" type="image/x-icon">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="../asset/css/normalize.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../asset/css/all.min.css">
+
+    <!-- Tailwind css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../asset/css/tailwind.css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+
+</head>
+<body class="min-h-screen relative">
+    <!-- Header -->
+    <header>
+        <!-- Main navigation container -->
+        <nav class="flex-no-wrap relative flex w-full items-center justify-between bg-white py-2 lg:flex-wrap lg:justify-start lg:py-4">
+            <div class="container flex w-full flex-wrap items-center justify-between px-3">
+
+                <!-- Logo -->
+                <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="#">
+                    <img class="me-2" src="../asset/img/logoBrand.png" style="height: 35px" alt="TE Logo" loading="lazy" />
+                </a>
+
+                <!-- Collapsible navigation container -->
+                <div class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContent1" data-twe-collapse-item>
+                    <!-- navigation links -->
+                    <ul class="list-style-none me-auto flex flex-col ps-0 lg:flex-row" data-twe-navbar-nav-ref>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                                Home
+                            </a>
+                            <a class=" text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2 " href="#" data-twe-nav-link-ref>
+                                About
+                            </a>
+                            <a class="text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                                Services
+                            </a>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                                Portfolio
+                            </a>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                                Files
+                            </a>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                                Content
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- links -->
+                </div>
+
+                <!-- Right elements -->
+                <div class="relative flex items-center">
+                    <div class="relative">
+                        <a href="#" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
+                        Free Consultation
+                        </a>
+                        <div class="absolute top-1/2 -right-[16px] -translate-y-1/2">
+                            <img src="../asset/img/icon/arrow-down.png" alt="" width="33px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Right elements -->
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button"
+                    data-twe-collapse-init
+                    data-twe-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <!-- Hamburger icon -->
+                    <span
+                    class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                        fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="w-full py-3 bg-[#F5F5F5]">
+        <div class="container">
+            <nav class="w-full rounded-md">
+                <ol class="list-reset flex">
+                    <li>
+                        <a href="#" class="text-main transition duration-150 ease-in-out hover:text-main focus:text-main active:text-main motion-reduce:transition-none ">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <span class="mx-2 text-neutral-400">/</span>
+                    </li>
+                    <li class="text-neutral-400">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <section>
+        <div class="container my-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="col-span-1">
+                    <div class="flex justify-between items-center gap-4 bg-[#F7F7F7] h-full p-3">
+                        <div class="flex items-center justify-center">
+                            <img src="../asset/img/extra/services-01.png" alt="service" class="w-3/4">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-start items-start my-4">
+                            <h3 class="text-3xl font-medium text-second mb-4">Technical Services & Programming</h3>
+                            <p class="text-second font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                            <a href="#" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
+                                Read MORE
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex justify-between items-center gap-4 bg-[#F7F7F7] h-full p-3">
+                        <div class="flex items-center justify-center">
+                            <img src="../asset/img/extra/services-02.png"  alt="service" class="w-3/4">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-start items-start my-4">
+                            <h3 class="text-3xl font-medium text-second mb-4">Training</h3>
+                            <p class="text-second font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                            <a href="#" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
+                                Read MORE
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex justify-between items-center gap-4 bg-[#F7F7F7] h-full p-3">
+                        <div class="flex items-center justify-center">
+                            <img src="../asset/img/extra/services-03.png" alt="service" class="w-3/4">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-start items-start my-4">
+                            <h3 class="text-3xl font-medium text-second mb-4">Management Consulting</h3>
+                            <p class="text-second font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                            <a href="#" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
+                                Read MORE
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex justify-between items-center gap-4 bg-[#F7F7F7] h-full p-3">
+                        <div class="flex items-center justify-center">
+                            <img src="../asset/img/extra/services-04.png" alt="service" class="w-3/4">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-start items-start my-4">
+                            <h3 class="text-3xl font-medium text-second mb-4">Business Development</h3>
+                            <p class="text-second font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                            <a href="#" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
+                                Read MORE
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex justify-between items-center gap-4 bg-[#F7F7F7] h-full p-3">
+                        <div class="flex items-center justify-center">
+                            <img src="../asset/img/extra/services-05.png" alt="service" class="w-3/4">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-start items-start my-4">
+                            <h3 class="text-3xl font-medium text-second mb-4">Data Analysis & Presentation</h3>
+                            <p class="text-second font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                            <a href="#" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
+                                Read MORE
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer w-full mt-10 py-3 bg-[#F5F5F5] ">
+        <div class="container">
+            <div class="flex justify-between items-start gap-12 md:gap-40 flex-wrap">
+                <div class="flex flex-col flex-1 justify-start items-start my-4">
+                    <a class="my-2 flex items-center hover:pl-2 transition-all delay-150 ease-in" href="#">
+                        <img class="me-2" src="../asset/img/logoBrand.png" style="height: 50px" alt="TE Logo" loading="lazy" />
+                    </a>
+                    <p class="text-second font-light text-base">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo .</p>
+                </div>
+                <div class="flex flex-col flex-1 justify-start items-start my-4">
+                    <h3 class="text-3xl text-second uppercase mb-4">Pages</h3>
+                    <div class="flex justify-between items-start w-full">
+                    <ul class="flex flex-col justify-start items-start w-1/2">
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="#">Home</a></li>
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">About Us</a></li>
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">Services</a></li>
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">Portfolio</a></li>
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">Files</a></li>
+                        </ul>
+                        <ul class="flex flex-col justify-start items-start w-1/2">
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">Terms Of Payment</a></li>
+                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="#">Content</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 justify-start items-center md:items-start  my-4">
+                    <h3 class="text-3xl text-second uppercase mb-4">social media</h3>
+                    <div class="flex justify-between items-start gap-5">
+                        <a href="#" class="text-white w-5 h-5 p-5 rounded-full bg-main hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                            <i class="fa-brands fa-snapchat"></i>
+                        </a>
+                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="text-center border-t border-[#DBDBDB] pt-2">
+            <p class="text-[#909090] font-light text-base uppercase">© All Copyright 2023 by tech touch</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+
+    <!-- JQuery -->
+    <script src="../asset/js/plugins/jquery-3.7.1.min.js"></script>
+    <!-- Tailwind Elements -->
+    <script src="../asset/js/plugins/tw-elements.umd.min.js"></script>
+    <script type="module" src="../asset/js/tailwind.js"></script>
+
+    <!-- My JS -->
+    <script src="../asset/js/main.js"></script>
+</body>
+</html>
