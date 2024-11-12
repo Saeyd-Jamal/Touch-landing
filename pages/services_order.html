@@ -23,6 +23,7 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="../asset/css/style.css">
+
 </head>
 <body class="min-h-screen relative">
     <!-- Header -->
@@ -44,10 +45,10 @@
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
                                 Home
                             </a>
-                            <a class=" text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2 " href="#" data-twe-nav-link-ref>
+                            <a class=" text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2 " href="#" data-twe-nav-link-ref>
                                 About
                             </a>
-                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
+                            <a class="text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
                                 Services
                             </a>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="#" data-twe-nav-link-ref>
@@ -104,7 +105,7 @@
     </header>
 
     <!-- Breadcrumb -->
-    <div class="w-full py-3 bg-[#F5F5F5]">
+    <div class="w-full py-3 bg-[#F5F5F5]">        
         <div class="container">
             <nav class="w-full rounded-md">
                 <ol class="list-reset flex">
@@ -116,115 +117,73 @@
                     <li>
                         <span class="mx-2 text-neutral-400">/</span>
                     </li>
-                    <li class="text-neutral-400">About</li>
+                    <li>
+                        <a href="./services.html" class="text-main transition duration-150 ease-in-out hover:text-main focus:text-main active:text-main motion-reduce:transition-none ">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <span class="mx-2 text-neutral-400">/</span>
+                    </li>
+                    <li class="text-neutral-400">Order Services</li>
                 </ol>
             </nav>
         </div>
     </div>
 
     <!-- Content -->
+    <style>
+        /* edit input in forms */
+        [data-twe-input-notch-ref] {
+            /* direction: rtl; */
+            border: none;
+        }
+        [data-twe-input-notch-leading-ref],[data-twe-input-notch-middle-ref],[data-twe-input-notch-trailing-ref]
+        {
+            border: transparent !important;
+        }
+    </style>
     <section class="my-6">
         <div class="container">
-            <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
-                <!-- Img -->
-                <div class="hidden md:flex md:justify-start img-about" style="flex: 1 1 40%;">
-                    <div class="hexagon-container">
-                        <!-- SVG للشكل السداسي بحدود متقطعة -->
-                        <svg width="620" height="590" viewBox="0 0 100 100">
-                            <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#43516D" stroke-width="0.3" stroke-dasharray="0.7" />
-                        </svg>
-                        <!-- العنصر الداخلي -->
-                        <div class="hexagon-content">
-                            <img src="../asset/img/extra/about-1.jpg" alt=""  class="w-full h-full object-cover">
-                        </div>
-                    </div>
+            <h2 class="text-5xl font-semibold text-main uppercase mb-2">Service Name</h2>
+            <form class="flex flex-wrap justify-between items-center text-center md:text-left my-8 gap-4"  >
+                <div class="relative mb-3 w-full " data-twe-input-wrapper-init>
+                    <input type="text" class="peer block min-h-[auto] w-full border-0 bg-[#F5F5F5] px-3 py-4 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0" id="exampleFormControlInputText" placeholder="Example label" />
+                    <label for="exampleFormControlInputText" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-4 leading-[1.6] text-neutral-300 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary">
+                        Name *
+                    </label>
                 </div>
-                <!-- Text -->
-                <div class="flex flex-col  flex-1/2 justify-start items-center">
-                    <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">About Us</h2>
-                    <h3 class="text-xl md:text-3xl font-semibold text-second uppercase mb-2">What Are tech touch</h3>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.</p>
-                    <p class="text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
-                    <div class="flex flex-wrap justify-center md:justify-between items-center  gap-4 contant-hexagon my-4">
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
-                            <!-- SVG للشكل السداسي بحدود متقطعة -->
-                            <svg width="100%" height="100%" viewBox="0 0 100 100">
-                                <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
-                            </svg>
-                            <!-- العنصر الداخلي -->
-                            <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">5</span>
-                                <span class="text-xl font-semibold text-second ">Partners</span>
-                            </div>
-                        </div>
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
-                            <!-- SVG للشكل السداسي بحدود متقطعة -->
-                            <svg width="100%" height="100%" viewBox="0 0 100 100">
-                                <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
-                            </svg>
-                            <!-- العنصر الداخلي -->
-                            <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">27</span>
-                                <span class="text-xl font-semibold text-second ">Employees</span>
-                            </div>
-                        </div>
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
-                            <!-- SVG للشكل السداسي بحدود متقطعة -->
-                            <svg width="100%" height="100%" viewBox="0 0 100 100">
-                                <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
-                            </svg>
-                            <!-- العنصر الداخلي -->
-                            <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">221</span>
-                                <span class="text-xl font-semibold text-second ">Projects</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="relative mb-3 flex-auto" data-twe-input-wrapper-init>
+                    <input type="text" class="peer block min-h-[auto] w-full border-0 bg-[#F5F5F5] px-3 py-4 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0" id="exampleFormControlInputText" placeholder="Example label"/>
+                    <label for="exampleFormControlInputText" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-4 leading-[1.6] text-neutral-300 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary">
+                        Your Email *
+                    </label>
                 </div>
-            </div>
+                <div class="relative mb-3 flex-auto" data-twe-input-wrapper-init>
+                    <input type="text" class="peer block min-h-[auto] w-full border-0 bg-[#F5F5F5] px-3 py-4 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0" id="exampleFormControlInputText" placeholder="Example label" />
+                    <label for="exampleFormControlInputText" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-4 leading-[1.6] text-neutral-300 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary">
+                        Phone Number *
+                    </label>
+                </div>
+                <div class="relative mb-3 w-full" data-twe-input-wrapper-init>
+                    <textarea
+                        class="peer block min-h-[auto] w-full border-0 bg-[#F5F5F5] px-3 py-4 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlTextarea1"
+                        rows="5"
+                        placeholder="Your message"></textarea>
+                    <label for="exampleFormControlInputText" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-4 leading-[1.6] text-neutral-300 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary">
+                        Your Note *
+                    </label>
+                </div>
+                <div class="relative mb-3 w-full flex justify-center">
+                    <button type="submit" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:mt-4 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">Send</button>
+                </div>
+            </form>
         </div>
     </section>
-
-
-    <section class="my-20">
-        <div class="container">
-            <div class="flex flex-wrap justify-between items-start">
-                <!-- Text -->
-                <div class="flex flex-col flex-1/2 justify-start items-center md:items-start text-center md:text-left pr-8">
-                    <h2 class="text-3xl font-semibold text-main uppercase mb-4">Our goals</h2>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod</p>
-                    <div class="flex flex-col justify-start items-center md:items-start mt-10">
-                        <h2 class="text-3xl font-semibold text-main uppercase mb-4">Our features</h2>
-                        <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna </p>
-                        <ul class="list-inside list-image-[url(../img/icon/Icon-material-done.png)] mt-4">
-                            <li class="text-dark font-light text-base ">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr,</li>
-                            <li class="text-dark font-light text-base ">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr,</li>
-                            <li class="text-dark font-light text-base ">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr,</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Video -->
-                <div class="hidden md:flex flex-col md:justify-start img-about" style="flex: 1 1 40%;">
-                    <h2 class="text-7xl font-semibold text-main uppercase mb-2">Video</h2>
-                    <h3 class="text-3xl font-semibold text-second uppercase mb-8">Demonstration</h3>
-                    <div class="hexagon-container">
-                        <!-- SVG للشكل السداسي بحدود متقطعة -->
-                        <svg width="620" height="590" viewBox="0 0 100 100">
-                            <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#43516D" stroke-width="0.3" stroke-dasharray="0.7" />
-                        </svg>
-                        <!-- العنصر الداخلي -->
-                        <div class="hexagon-content">
-                            <img src="../asset/img/extra/about-2.png" style="transform:rotate(90deg);" alt=""  class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Footer -->
-    <footer class="footer w-full py-3 bg-[#F5F5F5] ">
+    <footer class="footer w-full mt-10 py-3 bg-[#F5F5F5] ">
         <div class="container">
             <div class="flex justify-between items-start gap-12 md:gap-40 flex-wrap">
                 <div class="flex flex-col flex-1 justify-start items-start my-4">
