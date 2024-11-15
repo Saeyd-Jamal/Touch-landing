@@ -23,6 +23,8 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="../asset/css/style.css">
+    
+    <link rel="stylesheet" href="../asset/css/test_idea.css">
 </head>
 <body class="min-h-screen relative">
     <!-- Header -->
@@ -50,7 +52,7 @@
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./services.html" data-twe-nav-link-ref>
                                 Services
                             </a>
-                            <a class="text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./portfolios.html" data-twe-nav-link-ref>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./portfolios.html" data-twe-nav-link-ref>
                                 Portfolio
                             </a>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./files.html" data-twe-nav-link-ref>
@@ -75,7 +77,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Right elements -->
                 <!-- Right elements -->
                 <!-- Hamburger button for mobile view -->
                 <button
@@ -118,41 +119,60 @@
                         <span class="mx-2 text-neutral-400">/</span>
                     </li>
                     <li>
-                        <a href="./portfolios.html" class="text-main transition duration-150 ease-in-out hover:text-main focus:text-main active:text-main motion-reduce:transition-none ">
-                            Portfolio
+                        <a href="./test_idea.html" class="text-main transition duration-150 ease-in-out hover:text-main focus:text-main active:text-main motion-reduce:transition-none ">
+                            Test Your Idea
                         </a>
                     </li>
                     <li>
                         <span class="mx-2 text-neutral-400">/</span>
                     </li>
-                    <li class="text-neutral-400">The Project Name</li>
+                    <li class="text-neutral-400">Our Comment</li>
                 </ol>
             </nav>
         </div>
     </div>
 
     <!-- Content -->
-    <section class="my-28">
+    <section class="my-20">
         <div class="container">
-            <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left gap-20">
-                <!-- Img -->
-                <div class="hidden md:flex md:justify-start img-about border-4 border-main" style="flex: 1 1 40%;">
-                    <img src="../asset/img/extra/portfolio_show.png" alt="" class="translate-x-5 translate-y-5">
-                </div>
-                <!-- Text -->
-                <div class="flex flex-col  flex-1/2 justify-start items-center md:items-start">
-                    <h2 class="text-3xl md:text-5xl font-semibold text-main uppercase mb-2">The Project Name</h2>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.</p>
-                    <p class="text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
-                    <div class="flex flex-col justify-start items-start ">
-                        <h3 class="text-3xl text-second my-4">Links</h3>
-                        <a href="#" class="text-main my-2 hover:text-main hover:pl-2 transition-all delay-150 ease-in  font-light uppercase underline text-base">
-                            https://www.behance.net/ramishanti
-                        </a>
-                        <a href="#" class="text-main  my-2 hover:text-main hover:pl-2 transition-all delay-150 ease-in  font-light uppercase underline text-base">
-                            https://www.behance.net/ramishanti
-                        </a>
+            <h2 class="text-5xl font-semibold text-main uppercase mb-2 w-full text-center">Our comment on your idea</h2>
+            <div class="w-full bg-[#F5F5F5] p-10">
+                <div class="flex justify-start items-center">
+                    <span class="text-base me-4 ">Maturity Of Your Idea</span>
+                    <div class="flex-1  bg-gray-300 h-4 overflow-hidden">
+                        <div class="bg-main h-full " style="width: 70%;"></div> <!-- مثال: تقدم بنسبة 70% -->
                     </div>
+                    <span class="ms-4 text-lg text-main font-medium">60%</span>
+                </div> 
+                <div class="flex flex-col justify-start items-start mt-6">
+                    <span class="text-base me-4 mb-4">Idea Requirements</span>
+                    <label class="flex items-center mb-4">
+                        <input type="radio" name="title" value="Domain" class="appearance-none peer w-4 h-4 border border-dark rounded-full checked:bg-second checked:border-second focus:outline-none" checked>
+                        <span class="ml-2 text-base font-light">Domain</span>
+                    </label>
+                    <label class="flex items-center mb-4">
+                        <input type="radio" name="title" value="Introductory Video" class="appearance-none peer w-4 h-4 border border-dark rounded-full checked:bg-second checked:border-second focus:outline-none">
+                        <span class="ml-2 text-base font-light ">Introductory Video</span>
+                    </label>
+                    <label class="flex items-center mb-4">
+                        <input type="radio" name="title" value="Profile" class="appearance-none peer w-4 h-4 border border-dark rounded-full checked:bg-second checked:border-second focus:outline-none">
+                        <span class="ml-2 text-base font-light ">Profile</span>
+                    </label>
+                </div>
+                <div class="relative mb-3 w-full flex justify-center">
+                    <button type="button" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:-translate-y-1 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full bg-[#F5F5F5] p-10 mt-4">
+                <h2 class="text-2xl font-semibold text-main uppercase mb-4">Free Consultation</h2>
+                <p class="text-dark font-light text-base leading-6 mb-4">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.
+                    Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
+                <div class="relative mb-3 w-full flex justify-center md:justify-start">
+                    <a href="./free_consultation.html" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:translate-x-2 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">
+                        consultation
+                    </a>
                 </div>
             </div>
         </div>
@@ -218,7 +238,8 @@
     <script src="../asset/js/plugins/jquery-3.7.1.min.js"></script>
     <!-- Tailwind Elements -->
     <script src="../asset/js/plugins/tw-elements.umd.min.js"></script>
-    <script type="module" src="../asset/js/tailwind.js"></script>
+    <script type="module" src="../asset/js/tailwind.js"></script>  
+
 
     <!-- My JS -->
     <script src="../asset/js/main.js"></script>

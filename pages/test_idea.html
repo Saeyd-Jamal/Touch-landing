@@ -23,6 +23,8 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="../asset/css/style.css">
+    
+    <link rel="stylesheet" href="../asset/css/test_idea.css">
 </head>
 <body class="min-h-screen relative">
     <!-- Header -->
@@ -50,7 +52,7 @@
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./services.html" data-twe-nav-link-ref>
                                 Services
                             </a>
-                            <a class="text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./portfolios.html" data-twe-nav-link-ref>
+                            <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./portfolios.html" data-twe-nav-link-ref>
                                 Portfolio
                             </a>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./files.html" data-twe-nav-link-ref>
@@ -75,7 +77,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Right elements -->
                 <!-- Right elements -->
                 <!-- Hamburger button for mobile view -->
                 <button
@@ -117,42 +118,72 @@
                     <li>
                         <span class="mx-2 text-neutral-400">/</span>
                     </li>
-                    <li>
-                        <a href="./portfolios.html" class="text-main transition duration-150 ease-in-out hover:text-main focus:text-main active:text-main motion-reduce:transition-none ">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <span class="mx-2 text-neutral-400">/</span>
-                    </li>
-                    <li class="text-neutral-400">The Project Name</li>
+                    <li class="text-neutral-400">Test Your Idea</li>
                 </ol>
             </nav>
         </div>
     </div>
 
     <!-- Content -->
-    <section class="my-28">
+    <section class="my-20">
         <div class="container">
-            <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left gap-20">
-                <!-- Img -->
-                <div class="hidden md:flex md:justify-start img-about border-4 border-main" style="flex: 1 1 40%;">
-                    <img src="../asset/img/extra/portfolio_show.png" alt="" class="translate-x-5 translate-y-5">
+            <h2 class="text-5xl font-semibold text-main uppercase mb-2 w-full text-center">Test Your Idea</h2>
+            <div class="flex flex-col justify-center items-center w-full">
+                <!-- Progress Bar -->
+                <div class="progress-bar w-[125%] md:w-3/4 flex items-center">
+                    <span class="progress-step completed">1</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">2</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">3</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">4</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">5</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">6</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">7</span>
+                    <span class="progress-line flex-grow"></span>
+                    <span class="progress-step">8</span>
                 </div>
-                <!-- Text -->
-                <div class="flex flex-col  flex-1/2 justify-start items-center md:items-start">
-                    <h2 class="text-3xl md:text-5xl font-semibold text-main uppercase mb-2">The Project Name</h2>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.</p>
-                    <p class="text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
-                    <div class="flex flex-col justify-start items-start ">
-                        <h3 class="text-3xl text-second my-4">Links</h3>
-                        <a href="#" class="text-main my-2 hover:text-main hover:pl-2 transition-all delay-150 ease-in  font-light uppercase underline text-base">
-                            https://www.behance.net/ramishanti
-                        </a>
-                        <a href="#" class="text-main  my-2 hover:text-main hover:pl-2 transition-all delay-150 ease-in  font-light uppercase underline text-base">
-                            https://www.behance.net/ramishanti
-                        </a>
+
+
+                <div class="w-full bg-[#F5F5F5] p-5">
+                    <!-- Step 1 -->
+                    <div class="step-content" data-step="1">
+                        <h4 class="text-main font-medium mb-4">__ 1</h4>
+                        <p class="mb-4">Do You Have A Title For Your Idea?</p>
+                        <label class="flex items-center mb-2">
+                            <input type="radio" name="title" value="yes" class="appearance-none peer w-4 h-4 border border-second rounded-full checked:bg-main checked:border-second focus:outline-none" checked>
+                            <span class="ml-2 text-base font-light">Yes</span>
+                        </label>
+                        <label class="flex items-center mb-2">
+                            <input type="radio" name="title" value="no" class="appearance-none peer w-4 h-4 border border-second rounded-full checked:bg-main checked:border-second focus:outline-none">
+                            <span class="ml-2 text-base font-light ">No</span>
+                        </label>
                     </div>
+                    <!-- Step 2 -->
+                    <div class="step-content hidden" data-step="2">
+                        <p class="mb-4">Please provide a title for your idea:</p>
+                        <input type="text" class="w-full border border-gray-300 rounded-md p-2" placeholder="Enter your title here">
+                    </div>
+                </div>
+                
+
+                
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between mt-6">
+                </div>
+                <div class="relative mb-3">
+                    <button id="prevBtn" class="mt-2 px-8  py-4 text-gray-500 bg-gray-100 hover:bg-gray-300 hover:-translate-y-1 focus:bg-gray-300  transition-all duration-150 ease-in-out" disabled >
+                        <i class="fa-solid fa-arrow-left ms-3"></i>
+                        Back
+                    </button>
+                    <button id="nextBtn" type="button" class="mt-2 inline-block px-8  py-4 text-white bg-main hover:bg-second hover:-translate-y-1 focus:bg-second transition-all duration-150 ease-in-out" >
+                        <span id="nextBtnText">Next</span>
+                        <i class="fa-solid fa-arrow-right ms-3"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -218,9 +249,73 @@
     <script src="../asset/js/plugins/jquery-3.7.1.min.js"></script>
     <!-- Tailwind Elements -->
     <script src="../asset/js/plugins/tw-elements.umd.min.js"></script>
-    <script type="module" src="../asset/js/tailwind.js"></script>
+    <script type="module" src="../asset/js/tailwind.js"></script>  
+
 
     <!-- My JS -->
     <script src="../asset/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let currentStep = 1;
+            const totalSteps = 8;
+
+            function showStep(step) {
+                // إظهار وإخفاء محتوى الخطوات
+                $(".step-content").addClass("hidden");
+                $(`.step-content[data-step="${step}"]`).removeClass("hidden");
+
+                // تحديث مظهر شريط التقدم
+                $(".progress-bar .progress-step").each(function (index) {
+                    if (index + 1 < step) {
+                        // الخطوات التي تم تجاوزها
+                        $(this)
+                            .removeClass("bg-white border border-[#B2B2B2] text-[#B2B2B2]")
+                            .addClass("bg-second text-white completed");
+                        
+                        // تغيير لون الخط بعد الخطوات المكتملة
+                        $(this).next(".progress-line").addClass("done");
+                    } else if (index + 1 === step) {
+                        // الخطوة الحالية
+                        $(this)
+                            .removeClass("bg-white border border-[#B2B2B2] text-[#B2B2B2]")
+                            .addClass("bg-second text-white p-2 relative after:absolute after:inset-0 after:-z-10 after:rounded-full after:border-2 after:border-second after:scale-125");
+                    } else {
+                        // الخطوات القادمة
+                        $(this)
+                            .removeClass("bg-second text-white completed p-2 relative after:absolute after:inset-0 after:-z-10 after:rounded-full after:border-2 after:border-second after:scale-125")
+                            .addClass("bg-white border border-[#B2B2B2] text-[#B2B2B2]");
+                        // إزالة اللون من الخط بعد الخطوات القادمة
+                        $(this).next(".progress-line").removeClass("done").addClass("");
+                    }
+                });
+
+
+                // تحديث الأزرار
+                $("#prevBtn").prop("hidden", step === 1);
+                $("#prevBtn").prop("disabled", step === 1);
+                $("#nextBtnText").text(step === totalSteps ? "Submit" : "Next");
+            }
+
+            $("#nextBtn").on("click", function () {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    showStep(currentStep);
+                } else {
+                    // alert("Form submitted!"); // يمكنك استبدالها بمنطق إرسال البيانات
+                    window.location.href = "./our_comment.html";
+                }
+            });
+
+            $("#prevBtn").on("click", function () {
+                if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+                }
+            });
+
+            showStep(currentStep); // تهيئة الخطوة الأولى
+        });
+    </script>
 </body>
 </html>
