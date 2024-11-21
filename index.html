@@ -24,6 +24,8 @@
     <!-- Slide -->
     <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./asset/css/slide.css">
+
+
     <!-- My css -->
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
@@ -35,7 +37,7 @@
             <div class="container flex w-full flex-wrap items-center justify-between px-3">
 
                 <!-- Logo -->
-                <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="./index.html">
+                <a class="logo__hero mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="./index.html">
                     <img class="me-2" src="./asset/img/logoBrand.png" style="height: 35px" alt="TE Logo" loading="lazy" />
                 </a>
 
@@ -47,28 +49,39 @@
                             <a class="text-main transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./index.html" data-twe-nav-link-ref>
                                 Home
                             </a>
+                        </li>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
                             <a class=" text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2 " href="./pages/about.html" data-twe-nav-link-ref>
                                 About
                             </a>
+                        </li>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./pages/services.html" data-twe-nav-link-ref>
                                 Services
                             </a>
+                        </li>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./pages/portfolios.html" data-twe-nav-link-ref>
                                 Portfolio
                             </a>
+                        </li>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./pages/files.html" data-twe-nav-link-ref>
                                 Files
                             </a>
+                        </li>
+                        <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
                             <a class="text-dark transition duration-200 hover:text-main hover:ease-in-out focus:text-main active:text-main motion-reduce:transition-none lg:px-2" href="./pages/contact.html" data-twe-nav-link-ref>
                                 Content
                             </a>
                         </li>
+
                     </ul>
                     <!-- links -->
                 </div>
 
                 <!-- Right elements -->
-                <div class="relative flex items-center">
+                <div class="right__hero relative flex items-center">
                     <div class="relative">
                         <a href="./pages/free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
                         Free Consultation
@@ -111,10 +124,16 @@
         <div class="container">
             <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
                 <!-- Text -->
-                <div class="flex flex-col  flex-1/2 justify-start items-center md:items-start">
+                <div class="text__hero flex flex-col  flex-1/2 justify-start items-center md:items-start">
                     <h1 class="text-5xl md:text-8xl font-bold">
                         <span class="text-second">Test Your</span> 
-                        <span class="text-main">Idea</span>
+                        <span class="text-main" id="typewriter_hero"></span>
+                        <!-- الكلمات مخزنة في HTML -->
+                        <div id="word-list" class="hidden">
+                            <span>Idea</span>
+                            <span>Plan</span>
+                            <span>Project</span>
+                        </div>
                     </h1>
                     <div id="hero-texts" class="relative space-y-4 mt-4">
                         <p class="hero-paragraph font-light leading-6 text-xl md:text-3xl text-dark">
@@ -149,8 +168,8 @@
                     </div>
                 </div>
                 <!-- Img -->
-                <div class="hidden md:flex md:justify-start img-about" style="flex: 1 1 40%;">
-                    <img src="./asset/img/extra/hero.png" alt="" width="100%">
+                <div class="img__hero animate-oscillate hidden md:flex md:justify-end md:items-center img-about" style="flex: 1 1 40%;">
+                    <img src="./asset/img/extra/hero.png" alt="" width="75%">
                 </div>
             </div>
         </div>
@@ -166,7 +185,7 @@
         <div class="container w-full">
             <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
                 <!-- Img -->
-                <div class="hidden md:flex md:justify-center img-about" style="flex: 1 1 40%;">
+                <div class="img__about hidden lg:flex lg:justify-center img-about" style="flex: 1 1 40%;">
                     <div class="hexagon-container">
                         <!-- SVG للشكل السداسي بحدود متقطعة -->
                         <svg width="620" height="590" viewBox="0 0 100 100">
@@ -179,42 +198,43 @@
                     </div>
                 </div>
                 <!-- Text -->
-                <div class="flex flex-col  flex-1/2 justify-start items-center md:items-start">
-                    <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">About Us</h2>
-                    <h3 class="text-xl md:text-3xl font-semibold text-second uppercase mb-2">What Are tech touch</h3>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.</p>
-                    <p class="text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
+                <div class=" flex flex-col  flex-1/2 justify-start items-center md:items-start">
+                    <h2 class="text__about text-5xl md:text-7xl font-semibold text-main uppercase mb-2">About Us</h2>
+                    <h3 class="text__about text-xl md:text-3xl font-semibold text-second uppercase mb-2">What Are tech touch</h3>
+                    <p class="text__about text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet.</p>
+                    <p class="text__about text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
                     <div class="flex flex-wrap justify-center md:justify-between items-center  gap-4 contant-hexagon my-4">
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
+                        <div class="card__about hexagon-container w-[70%] md:w-[30%]">
                             <!-- SVG للشكل السداسي بحدود متقطعة -->
                             <svg width="100%" height="100%" viewBox="0 0 100 100">
                                 <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
                             </svg>
                             <!-- العنصر الداخلي -->
                             <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">5</span>
+                                <!--  data-target="5" هنا يتم وضع الرقم الذي سيظهر والفكرة لحركة زيادة الارقام -->
+                                <span class="text-7xl font-semibold text-main mb-2 counter" data-target="5">0</span> 
                                 <span class="text-xl font-semibold text-second ">Partners</span>
                             </div>
                         </div>
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
+                        <div class="card__about hexagon-container w-[70%] md:w-[30%]">
                             <!-- SVG للشكل السداسي بحدود متقطعة -->
                             <svg width="100%" height="100%" viewBox="0 0 100 100">
                                 <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
                             </svg>
                             <!-- العنصر الداخلي -->
                             <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">27</span>
+                                <span class="text-7xl font-semibold text-main mb-2 counter" data-target="27">0</span>
                                 <span class="text-xl font-semibold text-second ">Employees</span>
                             </div>
                         </div>
-                        <div class="hexagon-container w-[70%] md:w-[30%]">
+                        <div class="card__about hexagon-container w-[70%] md:w-[30%]">
                             <!-- SVG للشكل السداسي بحدود متقطعة -->
                             <svg width="100%" height="100%" viewBox="0 0 100 100">
                                 <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
                             </svg>
                             <!-- العنصر الداخلي -->
                             <div class="hexagon-content flex flex-col">
-                                <span class="text-7xl font-semibold text-main mb-2">221</span>
+                                <span class="text-7xl font-semibold text-main mb-2 counter" data-target="221">0</span>
                                 <span class="text-xl font-semibold text-second ">Projects</span>
                             </div>
                         </div>
@@ -222,7 +242,7 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block absolute -left-[17rem] top-[-236px] -z-10">
+        <div class="partial__about hidden lg:block absolute -left-[17rem] top-[-236px] -z-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="908.968" height="1494.982" viewBox="0 0 908.968 1494.982">
                 <g id="Path_18858" data-name="Path 18858" transform="translate(-879.186 2064.982) rotate(-90)" fill="#43516d" stroke-dasharray="5">
                     <path d="M2064.982,879.186l-521.073,908.968H1091.073L570,879.186Z" stroke="none"/>
@@ -237,11 +257,11 @@
         <div class="container">
             <div class=" w-full flex flex-wrap justify-between items-center md:items-start">
                 <div class="flex-1/2">
-                    <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">services</h2>
-                    <h3 class="text-xl md:text-3xl font-semibold text-second uppercase mb-2">The Best Service We Offer</h3>
-                    <p class="text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
+                    <h2 class="text__service text-5xl md:text-7xl font-semibold text-main uppercase mb-2">services</h2>
+                    <h3 class="text__service text-xl md:text-3xl font-semibold text-second uppercase mb-2">The Best Service We Offer</h3>
+                    <p class="text__service text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
                     <div class="flex flex-col justify-start items-start my-4">
-                        <div class="flex justify-between items-center gap-4 h-full p-3 border-y border-[#F5F5F5]">
+                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-y border-[#F5F5F5]">
                             <div class="flex items-center justify-center">
                                 <img src="./asset/img/extra/services-01.png" alt="service" class="w-3/4">
                             </div>
@@ -253,7 +273,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
+                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
                             <div class="flex items-center justify-center">
                                 <img src="./asset/img/extra/services-02.png"  alt="service" class="w-3/4">
                             </div>
@@ -265,7 +285,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
+                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
                             <div class="flex items-center justify-center">
                                 <img src="./asset/img/extra/services-03.png" alt="service" class="w-3/4">
                             </div>
@@ -277,7 +297,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
+                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
                             <div class="flex items-center justify-center">
                                 <img src="./asset/img/extra/services-04.png" alt="service" class="w-3/4">
                             </div>
@@ -289,7 +309,7 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
+                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#F5F5F5]">
                             <div class="flex items-center justify-center">
                                 <img src="./asset/img/extra/services-05.png" alt="service" class="w-3/4">
                             </div>
@@ -301,16 +321,16 @@
                                 </a>
                             </div> 
                         </div>
-                        <div class="relative my-8 w-full flex justify-start">
+                        <div class="service__box relative my-8 w-full flex justify-start">
                             <a href="./pages/services.html" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:ml-4 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">Show All</a>
                         </div>
                     </div>
                 </div>
                 <div class="flex-1/2 hidden lg:block">
-                    <div class="relative flex justify-end">
+                    <div class="img__service sticky top-0 flex justify-end">
                         <img src="./asset/img/extra/services_home_01.png" alt="extra">
                     </div>
-                    <div  class="relative flex justify-end mt-8">
+                    <div  class="img__service sticky top-0 bg-white flex justify-end mt-8">
                         <img src="./asset/img/extra/services_home_02.png" alt="extra">
                     </div>
                 </div>
@@ -329,19 +349,19 @@
             <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
                 <!-- left -->
                 <div class="flex flex-col justify-center img-about md:w-1/3 md:pr-10">
-                    <h2 class="text-5xl md:text-9xl font-semibold text-main uppercase mb-2">
+                    <h2 class="left__files text-5xl md:text-9xl font-semibold text-main uppercase mb-2">
                         <span class="text-second text-5xl md:text-7xl">Our</span>
                         <br>
                         Files
                     </h2>
-                    <h3 class="text-xl md:text-2xl font-light text-second mb-2">The Secret To Success May Be Inside One Of The Files</h3>
-                    <div class="hidden md:block">
+                    <h3 class="left__filestext-xl md:text-2xl font-light text-second mb-2">The Secret To Success May Be Inside One Of The Files</h3>
+                    <div class="left__files hidden md:block">
                         <img src="asset/img/extra/files_home.png" alt="">
                     </div>
                 </div>
                 <!-- Right -->
                 <div class="flex flex-col flex-auto justify-start items-center md:items-start  md:w-2/3 md:pl-10">
-                    <div class="flex justify-between items-center w-full">
+                    <div class="top__files flex justify-between items-center w-full">
                         <!-- شريط التقدم -->
                         <div class="relative mt-6 w-3/4">
                             <div id="progress-bar-files" class="absolute bottom-0 left-0 h-1 bg-main"></div>
@@ -354,7 +374,7 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-12 gap-4 my-8" id="files_view">
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -371,7 +391,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -388,7 +408,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -405,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -422,7 +442,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -439,7 +459,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class="card__file col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -456,7 +476,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -473,7 +493,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -490,7 +510,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -507,7 +527,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -524,7 +544,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -541,7 +561,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6 flex flex-col justify-start items-start">
+                        <div class=" col-span-12 md:col-span-6 flex flex-col justify-start items-start">
                             <div class="bg-[#F7F7F7] w-full mt-2 p-4">
                                 <div class="flex flex-col justify-start items-start my-4 pl-3">
                                     <h4 class="text-3xl text-black mb-4">
@@ -562,31 +582,27 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block absolute left-0 top-20 -z-10">
+        <div class="partial__files hidden lg:block absolute left-0 top-20 -z-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="428.808" height="836.905" viewBox="0 0 428.808 836.905">
                 <path id="Path_18887" data-name="Path 18887" d="M590.7,0l246.2,428.808H0L246.2,0Z" transform="translate(428.808) rotate(90)" fill="#ebebeb"/>
             </svg>              
         </div>
     </section>
 
-
     <!-- partners -->
     <section class="my-6 relative">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="677.327" height="136.595" viewBox="0 0 677.327 136.595">
-            <path id="Path_19072" data-name="Path 19072" d="M1918.263-60H1747.5L1579.678-193.595H1240.936" transform="translate(-1240.936 195.095)" fill="none" stroke="#cbcbcb" stroke-width="3" stroke-dasharray="5"/>
-        </svg> -->
         <div class="flex justify-center items-end overflow-hidden">
-            <div>
+            <div class="left_partners">
                 <svg xmlns="http://www.w3.org/2000/svg" width="677.327" height="136.595" viewBox="0 0 677.327 136.595">
                     <path id="Path_19073" data-name="Path 19073" d="M1240.936-60H1411.7l167.822-133.595h338.742" transform="translate(-1240.936 195.095)" fill="none" stroke="#cbcbcb" stroke-width="3" stroke-dasharray="5"/>
                 </svg>
             </div>
-            <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center center__partners">
                 <h3 class="text-xl md:text-3xl font-semibold text-second mb-2">Tech Touch</h3>
                 <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">partners</h2>
                 <p class="text-dark font-light text-base leading-6 text-center">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
             </div>
-            <div>
+            <div class="right_partners">
                 <svg xmlns="http://www.w3.org/2000/svg" width="677.327" height="136.595" viewBox="0 0 677.327 136.595">
                     <path id="Path_19072" data-name="Path 19072" d="M1918.263-60H1747.5L1579.678-193.595H1240.936" transform="translate(-1240.936 195.095)" fill="none" stroke="#cbcbcb" stroke-width="3" stroke-dasharray="5"/>
                 </svg>
@@ -594,50 +610,32 @@
         </div>
         <div class="container">
             <div class="flex flex-wrap justify-center items-center gap-5">
-                <div>
-                    <img src="./asset/img/extra/partners-01.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-01.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-02.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-02.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-03.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-03.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-01.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-01.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-02.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-02.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-03.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-03.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-01.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-01.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-02.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-02.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
-                <div>
-                    <img src="./asset/img/extra/partners-03.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-01.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-02.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-03.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-01.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-02.png" alt="">
-                </div>
-                <div>
-                    <img src="./asset/img/extra/partners-03.png" alt="">
+                <div class="img__partners">
+                    <img src="./asset/img/extra/partners-03.png" alt="" class="transition-all delay-200 ease grayscale hover:grayscale-0 hover:scale-105">
                 </div>
             </div>
         </div>
@@ -647,12 +645,12 @@
     <section class="my-6 relative" style="background-image: url(./asset/img/extra/work_bg.png);">
         <div class="container py-16">
             <div class="flex flex-col justify-center items-center">
-                <h3 class="text-xl md:text-3xl font-semibold text-main mb-2">Work</h3>
-                <h2 class="text-5xl md:text-6xl font-semibold text-white uppercase mb-2">Improve & Enhance the Tech Projects</h2>
+                <h3 class="text-xl md:text-3xl font-semibold text-main mb-2 text__work">Work</h3>
+                <h2 class="text-5xl md:text-6xl font-semibold text-white uppercase mb-2 text__work">Improve & Enhance the Tech Projects</h2>
             </div>
             <div class="swiper p-0">
                 <div class="slider-wrapper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper top__work">
                         <div class="flex flex-col justify-start items-start swiper-slide">
                             <div>
                                 <img src="./asset/img/extra/portfolio-01.png" alt="">
@@ -779,23 +777,23 @@
                                 <i class="fa-solid fa-arrow-right ms-2"></i>
                             </a>
                         </div>
-
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
+                    <div class="swiper-pagination top__work"></div>
+                    <div class="swiper-slide-button swiper-button-prev left__work"></div>
+                    <div class="swiper-slide-button swiper-button-next right__work"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- our team -->
 
     <!-- client's feedback -->
     <section class="my-10 relative">
         <div class="container py-10">
             <div class="flex flex-col justify-center items-center">
-                <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">CLIENT'S FEEDBACK</h2>
-                <h3 class="text-xl md:text-3xl font-semibold text-second mb-2">What People Say About Us</h3>
+                <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2">CLIENT'S FEEDBACK</h2>
+                <h3 class="text__client text-xl md:text-3xl font-semibold text-second mb-2">What People Say About Us</h3>
             </div>
         </div>
         <div class="bg-main my-10 py-16 relative flex justify-center">
@@ -803,25 +801,25 @@
                 <!-- الصور (التحكم بالسلايدر) -->
                 <div class="mt-6">
                     <div class="image-slider" id="image-slider">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 1" class="w-16 h-16 rounded-full border-2 border-teal-500 cursor-pointer inactive" data-client="1">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 2" class="w-16 h-16 rounded-full border-2 border-teal-500 cursor-pointer inactive" data-client="2">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 3" class="w-16 h-16 rounded-full border-2 border-teal-500 cursor-pointer active" data-client="3">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 4" class="w-16 h-16 rounded-full border-2 border-teal-500 cursor-pointer inactive" data-client="4">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 5" class="w-16 h-16 rounded-full border-2 border-teal-500 cursor-pointer inactive" data-client="5">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 1" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="1">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 2" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="2">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 3" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer active img__client" data-client="3">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 4" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="4">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 5" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="5">
                     </div>
                 </div>
             </div>
         
             <!-- المراجعات -->
-            <div class="relative mt-8 bg-teal-50 p-6 rounded-lg shadow-md text-center w-1/4">
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[22px]">
+            <div class="review__arrow relative mt-8 bg-teal-50 p-6 rounded-lg shadow-md text-center w-1/4">
+                <div class="review__arrow absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[22px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="23" viewBox="0 0 63 23">
                         <path id="Polygon_28" data-name="Polygon 28" d="M31.5,0,63,23H0Z" fill="#ebebeb"/>
                     </svg>
                 </div>
                 <!-- مراجعة 1 -->
-                <div class="review" data-client="1">
-                    <h3 class="text-lg font-bold text-gray-700">Abdullah</h3>
+                <div class="review__arrow review" data-client="1">
+                    <h3 class="text-lg font-bold text-gray-700">s1</h3>
                     <p class="text-sm text-gray-500">Customer Service</p>
                     <p class="mt-2 text-gray-600">
                         Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sedss Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. 
@@ -836,8 +834,8 @@
                 </div>
 
                 <!-- مراجعة 2 -->
-                <div class="review" data-client="2">
-                    <h3 class="text-lg font-bold text-gray-700">Abdullah</h3>
+                <div class="review__arrow review" data-client="2">
+                    <h3 class="text-lg font-bold text-gray-700">Abdullah2</h3>
                     <p class="text-sm text-gray-500">Customer Service</p>
                     <p class="mt-2 text-gray-600">
                         Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sedss Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. 
@@ -852,7 +850,7 @@
                 </div>
         
                 <!-- مراجعة 3 -->
-                <div class="review active" data-client="3">
+                <div class="review__arrow review active" data-client="3">
                     <h3 class="text-lg font-bold text-gray-700">Sara</h3>
                     <p class="text-sm text-gray-500">Product Manager</p>
                     <p class="mt-2 text-gray-600">
@@ -868,8 +866,8 @@
                 </div>
         
                 <!-- مراجعة 4 -->
-                <div class="review" data-client="4">
-                    <h3 class="text-lg font-bold text-gray-700">Ali</h3>
+                <div class="review__arrow review" data-client="4">
+                    <h3 class="text-lg font-bold text-gray-700">Ali4</h3>
                     <p class="text-sm text-gray-500">Designer</p>
                     <p class="mt-2 text-gray-600">
                         The team is very cooperative and professional in every aspect!
@@ -884,8 +882,8 @@
                 </div>
                 
                 <!-- مراجعة 5 -->
-                <div class="review" data-client="5">
-                    <h3 class="text-lg font-bold text-gray-700">Ali</h3>
+                <div class="review__arrow review" data-client="5">
+                    <h3 class="text-lg font-bold text-gray-700">Ali5</h3>
                     <p class="text-sm text-gray-500">Designer</p>
                     <p class="mt-2 text-gray-600">
                         The team is very cooperative and professional in every aspect!
@@ -909,50 +907,50 @@
         <div class="container">
             <div class="flex justify-between items-start gap-12 md:gap-40 flex-wrap">
                 <div class="flex flex-col flex-1 justify-start items-start my-4">
-                    <a class="my-2 flex items-center hover:pl-2 transition-all delay-150 ease-in" href="./index.html">
+                    <a class="logo__hero my-2 flex items-center hover:pl-2 transition-all delay-150 ease-in" href="./index.html">
                         <img class="me-2" src="./asset/img/logoBrand.png" style="height: 50px" alt="TE Logo" loading="lazy" />
                     </a>
-                    <p class="text-second font-light text-base">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo .</p>
+                    <p class="text__footer text-second font-light text-base">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo .</p>
                 </div>
                 <div class="flex flex-col flex-1 justify-start items-start my-4">
-                    <h3 class="text-3xl text-second uppercase mb-4">Pages</h3>
+                    <h3 class="text-3xl text-second uppercase mb-4 top__footer">Pages</h3>
                     <div class="flex justify-between items-start w-full">
                     <ul class="flex flex-col justify-start items-start w-1/2">
-                            <li class="my-1"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
+                            <li class="links__footer my-1"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
                         </ul>
                         <ul class="flex flex-col justify-start items-start w-1/2">
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/terms_conditions.html">Terms Of Payment</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/contact.html">Content</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/test_idea.html">Test Idea</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/our_comment.html">Our Comment</a></li>
-                            <li class="my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/payment_method.html">Pyment Method</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/terms_conditions.html">Terms Of Payment</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/contact.html">Content</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/test_idea.html">Test Idea</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/our_comment.html">Our Comment</a></li>
+                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/payment_method.html">Pyment Method</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="flex flex-col flex-1 justify-start items-center md:items-start  my-4">
-                    <h3 class="text-3xl text-second uppercase mb-4">social media</h3>
+                    <h3 class="text-3xl text-second uppercase mb-4 top__footer">social media</h3>
                     <div class="flex justify-between items-start gap-5">
-                        <a href="#" class="text-white w-5 h-5 p-5 rounded-full bg-main hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                        <a href="#" class="links__footer text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                        <a href="#" class="links__footer text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                        <a href="#" class="links__footer text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
                             <i class="fa-brands fa-snapchat"></i>
                         </a>
-                        <a href="#" class="text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
+                        <a href="#" class="links__footer text-black w-5 h-5 p-5 rounded-full bg-white hover:text-white hover:bg-main hover:scale-105 transition-all delay-150 ease-in flex justify-center items-center">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
                 </div>
             </div>        
         </div>
-        <div class="text-center border-t border-[#DBDBDB] pt-2">
+        <div class="text-center border-t border-[#DBDBDB] pt-2 bottom__footer">
             <p class="text-[#909090] font-light text-base uppercase">© All Copyright 2023 by tech touch</p>
         </div>
     </footer>
@@ -965,9 +963,17 @@
     <script type="module" src="./asset/js/tailwind.js"></script>
     <!-- Slide -->
     <script src="./asset/js/plugins/swiper-bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="./asset/js/plugins/scrollreveal.min.js"></script>
+
+    <!-- Scroll Anemation All sections -->
+    <script src="./asset/js/scroll.js"></script>
+
     <!-- My JS -->
     <script src="./asset/js/main.js"></script>
     
+    <!-- Hero -->
     <script>
         $(document).ready(function () {
             // استهداف جميع عناصر الفقرات داخل القسم
@@ -1004,6 +1010,32 @@
             // إظهار الفقرة الأولى عند بدء التشغيل
             updateParagraph(currentIndex);
         });
+    </script>
+
+    <!-- About -->
+    <script>
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute("data-target"));
+            let count = 0;
+            const interval = setInterval(() => {
+                count += Math.ceil(target / 100); // زيادة تدريجية
+                if (count >= target) {
+                    count = target;
+                    clearInterval(interval);
+                }
+                element.textContent = count;
+            }, 20); // سرعة العد
+        }
+
+        ScrollReveal().reveal('.counter', {
+            beforeReveal: function (el) {
+                animateCounter(el);
+            }
+        });
+    </script>
+
+    <!-- Files -->
+    <script>
         $(document).ready(function () {
             // استهداف الحاوية التي تحتوي على العناصر
             const $itemsContainer = $('#files_view');
@@ -1058,6 +1090,8 @@
         });
 
     </script>
+
+    <!-- works -->
     <script>
         const swiper = new Swiper('.slider-wrapper', {
             loop: true,
@@ -1094,38 +1128,65 @@
             }
         });
     </script>
+
+
+    <!-- client's feedback -->
     <script>
         $(document).ready(function () {
-            const images = $("img[data-client]");
+            const slider = $('#image-slider');
             const reviews = $(".review");
-
             function updateContent(clientId) {
                 reviews.removeClass("active");
                 $(`.review[data-client="${clientId}"]`).addClass("active");
             }
 
-            function updateImages(activeIndex) {
-                images.each(function (index) {
-                const $img = $(this);
-                if (index === activeIndex) {
-                    $img.removeClass("inactive").addClass("active");
-                } else {
-                    $img.removeClass("active").addClass("inactive");
+            slider.on('click', 'img', function () {
+                const clicked = $(this); // العنصر الذي تم النقر عليه
+                const currentActive = slider.find('.active'); // العنصر النشط حالياً
+                const clientId = $(this).data('client');
+
+                if (!clicked.hasClass('active')) {
+                    currentActive.removeClass('active').addClass('inactive'); // اجعل العنصر النشط الحالي غير نشط
+                    clicked.removeClass('inactive').addClass('active'); // اجعل العنصر الذي تم النقر عليه نشطاً
+
+                    const clickedIndex = clicked.index();
+                    const totalImages = slider.children().length;
+
+                    const centerIndex = 2; // الموقع الثالث (0-based index)
+                    const offset = clickedIndex - centerIndex;
+
+                    const reorderedImages = [];
+
+                    // إضافة تأثيرات الحركة قبل الترتيب
+                    slider.children().each(function (index) {
+                        if (index < clickedIndex) {
+                            $(this).addClass('slide-left'); // إزاحة لليسار
+                        } else if (index > clickedIndex) {
+                            $(this).addClass('slide-right'); // إزاحة لليمين
+                        }
+                    });
+
+                    setTimeout(() => {
+                        // إعادة ترتيب الصور
+                        for (let i = 0; i < totalImages; i++) {
+                            const newIndex = (i - offset + totalImages) % totalImages;
+                            reorderedImages[newIndex] = slider.children().eq(i);
+                        }
+
+                        slider.empty();
+                        reorderedImages.forEach(img => {
+                            slider.append(img);
+                            $(img).removeClass('slide-left slide-right').addClass('fade-in'); // تأثير الظهور
+                        });
+                        reorderedImages.forEach(img => {
+                            $(img).removeClass('fade-in'); // تأثير الظهور
+                        });
+
+                    }, 300); // الانتظار لإنهاء الحركة
                 }
-                });
-            }
 
-            images.click(function () {
-                const clientId = $(this).data("client");
-                const activeIndex = images.index(this);
-
-                updateImages(activeIndex); // تحديث الصور
                 updateContent(clientId);  // تحديث النصوص
             });
-
-            // تهيئة أول صورة ونص
-            updateImages(2);
-            updateContent(3);
         });
     </script>
 </body>

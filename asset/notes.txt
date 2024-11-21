@@ -1,0 +1,103 @@
+/*
+        // hero + header
+        sr.reveal(`nav`);
+        sr.reveal(`.logo__hero, .text__hero`, { origin: 'left' });
+        sr.reveal(`.right__hero, .img__hero`, { origin: 'right' });
+        // Footer
+        sr.reveal(`.links__footer`, { interval: 100,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
+        sr.reveal(`.top__footer`);
+        sr.reveal(`.text__footer `, { origin: 'left' });        
+        sr.reveal(`.bottom__footer`, { origin: 'bottom' });
+
+        // About
+        sr.reveal(`.img__about, .partial__about`, { origin: 'left' });
+        sr.reveal(`.text__about`, { origin: 'right' });
+
+        // Services
+        sr.reveal(`.text__service`, { origin: 'left' });
+        sr.reveal(`.service__box`, { interval: 200,origin: 'left' });
+        sr.reveal(`.img__service`, { origin: 'right' });
+        
+        // Files
+        sr.reveal(`.top__files`);
+        sr.reveal(`.partial__files, .left__files`, { origin: 'left' });
+        sr.reveal(`.card__file`, { interval: 200,origin: 'bottom' });
+
+        // partners
+        sr.reveal(`.left_partners`, { origin: 'left' });
+        sr.reveal(`.right_partners`, { origin: 'right' });
+        sr.reveal(`.center__partners`, { origin: 'bottom' });
+        sr.reveal(`.img__partners`, { interval: 200,origin: 'bottom' });
+
+        // Work
+        sr.reveal(`.text__work`);
+        sr.reveal(`.left__work`, { origin: 'left' });
+        sr.reveal(`.right__work`, { origin: 'right' });
+        sr.reveal(`.top__work`, { interval: 200,origin: 'bottom' });
+
+        // our team
+
+        // Clients
+        sr.reveal(`.text__client`);
+        sr.reveal(`.review__arrow`, { origin: 'bottom' });
+        sr.reveal(`.img__client `, { interval: 200,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
+*/
+       
+
+           <!-- our team -->
+    
+    <section class="my-6 relative h-100 snap-x">
+        <div class="container w-full">
+            <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
+                <div class=" flex flex-col  flex-1/2 justify-start items-center md:items-start">
+                    <h2 class=" text-5xl md:text-7xl font-semibold text-main uppercase mb-2">About Us</h2>
+                    <h3 class="text-xl md:text-3xl font-semibold text-second uppercase mb-2">What Are tech touch</h3>
+                    <p class="text-dark  font-light  text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo</p>
+                    <div class="flex flex-wrap justify-center md:justify-between items-center  gap-4 contant-hexagon my-4">
+                        <div class="absolute top-50 hexagon-container w-[70%] md:w-[30%]">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <svg width="100%" height="100%" viewBox="0 0 100 100">
+                                <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
+                            </svg>
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content flex flex-col">
+                                <!--  data-target="5" هنا يتم وضع الرقم الذي سيظهر والفكرة لحركة زيادة الارقام -->
+                                <span class="text-7xl font-semibold text-main mb-2">5</span> 
+                                <span class="text-xl font-semibold text-second ">Partners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="snap-start absolute top-50 contant-hexagon ">
+            <div class="hexagon-container w-[70%] md:w-[30%]">
+                <!-- SVG للشكل السداسي بحدود متقطعة -->
+                <svg width="100%" height="100%" viewBox="0 0 100 100">
+                    <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#D2D2D2" stroke-width="0.5" stroke-dasharray="0" />
+                </svg>
+                <!-- العنصر الداخلي -->
+                <div class="hexagon-content flex flex-col">
+                    <!--  data-target="5" هنا يتم وضع الرقم الذي سيظهر والفكرة لحركة زيادة الارقام -->
+                    <span class="text-7xl font-semibold text-main mb-2">5</span> 
+                    <span class="text-xl font-semibold text-second ">Partners</span>
+                </div>
+            </div>
+        </div>
+        <div class="relative rounded-xl overflow-auto"><!-- Snap Point -->
+            <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 h-[270.667px]">
+                <svg class="snap-start absolute top-50 -z-10"  xmlns="http://www.w3.org/2000/svg" width="504.065" height="249.667" viewBox="0 0 504.065 249.667">
+                    <path id="Path_19075" data-name="Path 19075" d="M-12555.32,1466.587l-249.712-233.823-156.612,151.366-90.849,87.806" transform="translate(13055.968 -1225.863)" fill="none" stroke="#50ada3" stroke-width="10"/>
+                </svg>
+                <svg class="snap-start absolute top-50 left-[495.156px] -z-10"  xmlns="http://www.w3.org/2000/svg" width="504.065" height="249.667" viewBox="0 0 504.065 249.667">
+                    <path id="Path_19075" data-name="Path 19075" d="M-12555.32,1466.587l-249.712-233.823-156.612,151.366-90.849,87.806" transform="translate(13055.968 -1225.863)" fill="none" stroke="#50ada3" stroke-width="10"/>
+                </svg>
+                <svg class="snap-start absolute top-50 left-[991.156px] -z-10"  xmlns="http://www.w3.org/2000/svg" width="504.065" height="249.667" viewBox="0 0 504.065 249.667">
+                    <path id="Path_19075" data-name="Path 19075" d="M-12555.32,1466.587l-249.712-233.823-156.612,151.366-90.849,87.806" transform="translate(13055.968 -1225.863)" fill="none" stroke="#50ada3" stroke-width="10"/>
+                </svg>
+                <svg class="snap-start absolute top-50 left-[1487.156px] -z-10"  xmlns="http://www.w3.org/2000/svg" width="504.065" height="249.667" viewBox="0 0 504.065 249.667">
+                    <path id="Path_19075" data-name="Path 19075" d="M-12555.32,1466.587l-249.712-233.823-156.612,151.366-90.849,87.806" transform="translate(13055.968 -1225.863)" fill="none" stroke="#50ada3" stroke-width="10"/>
+                </svg>
+            </div>
+        </div>
+    </section>
