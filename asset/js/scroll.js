@@ -1,9 +1,8 @@
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
+    distance: '80px',
     duration: 2500,
     delay: 300,
-    reset: true
 });
 
 // origin : top
@@ -20,4 +19,4 @@ sr.reveal(`.right__hero, .img__hero, .text__about, .img__service , .right_partne
 // origin : bottom
 sr.reveal(`.center__partners , .review__arrow , .bottom__footer`, { origin: 'bottom' });
 sr.reveal(`.links__footer`, { interval: 100,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
-sr.reveal(`.card__about, .card__file , .img__partners , .top__work , .img__client `, { interval: 200,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
+sr.reveal(`.card__about, .card__file , .img__partners , .top__work`, { interval: 200,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
