@@ -101,3 +101,88 @@
             </div>
         </div>
     </section>
+
+
+        <!-- our team -->
+    <section class="my-10 relative">
+        <div class="container py-10">
+            <div class="flex flex-col justify-center items-center">
+                <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2">OUR TEAM</h2>
+                <h3 class="text__client text-xl md:text-3xl font-semibold text-second mb-2">Meet Our Team</h3>
+                <p class="text__client w-3/4 text-dark font-light text-base leading-6 text-center">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
+            </div>
+        </div>
+        <div>
+            <div class="content flex justify-center items-center gap-[200px] mt-[90px] overflow-x-auto h-[371px]">
+                <div class="rec">
+                    <!-- <img class="f" src="man-avatar.png" alt=""> -->
+                    <div class="f img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="l img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec">
+                    <!-- <img class="f" src="man-avatar.png" alt=""> -->
+                    <div class="f img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="l img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rec">
+                    <!-- <img class="f" src="man-avatar.png" alt=""> -->
+                    <div class="f img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="l img-about">
+                        <div class="hexagon-container" style="width: 150px; height: 140px;">
+                            <!-- SVG للشكل السداسي بحدود متقطعة -->
+                            <!-- العنصر الداخلي -->
+                            <div class="hexagon-content bg-main"  style="width: 150px; height: 150px; background-color: #50ada3;">
+                                <img src="./asset/img/extra/about-1.jpg" alt=""  class="w-[140px] h-[140px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

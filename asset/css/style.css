@@ -146,3 +146,76 @@ body {
 .animate-oscillate {
   animation: oscillate 2s infinite;
 }
+
+
+
+/* our team */
+.content .rec {
+    position: relative;
+    width: 270px ;
+    height: 235px;
+}
+
+.rec .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: rotate(45deg);
+}
+
+.rec .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: rotate(-45deg);
+}
+
+.rec img {
+    position: absolute;
+    cursor: pointer;
+    clip-path: polygon(25% 7.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+}
+
+.rec .f {
+    left: 50%;
+    top: -55px;
+    transform: translateX(-50%);
+    z-index: 99;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.rec .l {
+    right: -37%;
+    transform: translateX(50%);
+    bottom: -55px;
+    z-index: 99;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+@media (max-width:950px) {
+    .rec {
+        width: 200px;
+    }
+    .rec .left {
+        width: 200px;
+        height: 3px;
+        transform: rotate(0);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .rec .right {
+        display: none;
+    }
+    
+}
