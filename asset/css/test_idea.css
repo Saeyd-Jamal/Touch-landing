@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 35px;
+}
 .progress-bar::before {
   content: '';
   position: absolute;
