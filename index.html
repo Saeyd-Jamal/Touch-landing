@@ -1300,8 +1300,19 @@
         });
 
 
+        // التعديل على الحجم
+        $(document).ready(function() {
+            // حدد القسم المستهدف
+            let recCount = $(".scroll-wrapper .content .rec").length;
+            let imgCount = $(".scroll-wrapper .content img").length;
+
+            let widthContent = (recCount * 270) + ((recCount - 1) * 200);
+            $(".scroll-wrapper .content").width(widthContent);           
+        });
+
 
     </script>
+
     <!-- client's feedback -->
     <script>
         $(document).ready(function () {
@@ -1316,7 +1327,6 @@
                 const clicked = $(this); // العنصر الذي تم النقر عليه
                 const currentActive = slider.find('.active'); // العنصر النشط حالياً
                 const clientId = $(this).data('client');
-
                 if (!clicked.hasClass('active')) {
                     currentActive.removeClass('active').addClass('inactive'); // اجعل العنصر النشط الحالي غير نشط
                     clicked.removeClass('inactive').addClass('active'); // اجعل العنصر الذي تم النقر عليه نشطاً
@@ -1347,16 +1357,17 @@
 
                         slider.empty();
                         reorderedImages.forEach(img => {
-                            slider.append(img);
                             $(img).removeClass('slide-left slide-right').addClass('fade-in'); // تأثير الظهور
+                            slider.append(img);
                         });
-                        reorderedImages.forEach(img => {
-                            $(img).removeClass('fade-in'); // تأثير الظهور
-                        });
-
+                        // الانتظار لمدة 5 ثوانٍ قبل إزالة تأثير الظهور
+                        setTimeout(() => {
+                            reorderedImages.forEach(img => {
+                                $(img).removeClass('fade-in'); // تأثير الظهور
+                            });
+                        }, 3000); // 5000ms = 5 ثوانٍ
                     }, 300); // الانتظار لإنهاء الحركة
                 }
-
                 updateContent(clientId);  // تحديث النصوص
             });
         });
