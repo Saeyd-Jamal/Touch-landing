@@ -11,6 +11,9 @@ module.exports = {
             listStyleImage: {
                 checkmark: 'url("/asset/img/icon/Icon material-done.png")',
             },
+            backgroundSize: {
+                '170': '170%',
+            },
             height: {
                 72: "18rem",
             },
