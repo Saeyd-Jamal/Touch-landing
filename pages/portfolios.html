@@ -77,7 +77,7 @@
                 </div>
 
                 <!-- Right elements -->
-                <div class="right__hero relative flex items-center">
+                <div class="right__hero relative  hidden lg:!flex  items-center">
                     <div class="relative">
                         <a href="./free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
                         Free Consultation
@@ -87,28 +87,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- Right elements -->
                 <!-- Hamburger button for mobile view -->
-                <button
+                <button 
+                    type="button" 
                     class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                    type="button"
-                    data-twe-collapse-init
-                    data-twe-target="#navbarSupportedContent1"
-                    aria-controls="navbarSupportedContent1"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
+                    data-twe-toggle="modal"
+                    data-twe-target="#NavBar"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                >
                     <span
-                    class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                        fill-rule="evenodd"
-                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                        clip-rule="evenodd" />
-                    </svg>
+                        class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                            </svg>
                     </span>
                 </button>
             </div>
@@ -328,6 +326,30 @@
             </div>
         </div>
     </section>
+
+    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-[100vh] w-full overflow-y-auto overflow-x-hidden outline-none pr-0" id="NavBar" tabindex="-1" aria-labelledby="NavBar" aria-modal="true" role="dialog">
+        <div data-twe-modal-dialog-ref class="pointer-events-none relative w-auto h-full translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-8 min-[576px]:max-w-[500px] min-[992px]:max-w-[666px] my-5 mx-4 flex justify-center items-center">
+            <div class="pointer-events-auto relative flex w-[86%] flex-col border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark rounded-2xl">
+                <!-- Modal body -->
+                <div class="relative p-4">
+                    <ul class="flex flex-col justify-start items-start w-100">
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
+                    </ul>   
+                    <div class="relative !flex items-center justify-center py-2">
+                        <div class="relative group">
+                            <a href="./pages/free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
+                            Free Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->

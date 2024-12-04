@@ -29,13 +29,12 @@
     <!-- My css -->
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
-<body class="min-h-screen relative overflow-x-hidden">
+<body class="min-h-screen relative overflow-x-hidden" style="padding-right: 0 !important;">
     <!-- Header -->
     <header>
         <!-- Main navigation container -->
         <nav class="flex-no-wrap relative flex w-full items-center justify-between bg-white py-2 lg:flex-wrap lg:justify-start lg:py-4">
-            <div class="container flex w-full flex-wrap items-center justify-between px-3">
-
+            <div class="md:container flex w-full flex-wrap items-center justify-between px-3">
                 <!-- Logo -->
                 <a class="logo__hero mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="./index.html">
                     <img class="me-2" src="./asset/img/logoBrand.png" style="height: 35px" alt="TE Logo" loading="lazy" />
@@ -81,7 +80,7 @@
                 </div>
 
                 <!-- Right elements -->
-                <div class="right__hero relative flex items-center">
+                <div class="right__hero relative hidden lg:!flex items-center ">
                     <div class="relative group">
                         <a href="./pages/free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
                         Free Consultation
@@ -93,41 +92,41 @@
                 </div>
                 <!-- Right elements -->
                 <!-- Hamburger button for mobile view -->
-                <button
+                <button 
+                    type="button" 
                     class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-                    type="button"
-                    data-twe-collapse-init
-                    data-twe-target="#navbarSupportedContent1"
-                    aria-controls="navbarSupportedContent1"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <!-- Hamburger icon -->
-                    <span
+                    data-twe-toggle="modal"
+                    data-twe-target="#NavBar"
+                    data-twe-ripple-init
+                    data-twe-ripple-color="light"
+                >
+                <span
                     class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                        fill-rule="evenodd"
-                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    </span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                            fill-rule="evenodd"
+                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                            clip-rule="evenodd" />
+                        </svg>
+                </span>
                 </button>
             </div>
         </nav>
     </header>
 
     <!-- hero -->
-    <section class="hero mt-12 mb-32 relative">
+    <section class="hero mt-32 mb-36 md:mt-12 md:mb-32 relative">
         <div class="container">
             <div class="flex flex-wrap justify-between items-center text-center md:text-left">
                 <!-- Text -->
                 <div class="text__hero flex flex-col  flex-1/2 justify-start items-center md:items-start">
                     <h1 class="text-5xl md:text-[5rem] font-bold">
                         <span class="text-second">Test Your</span> 
-                        <span class="text-main" id="typewriter_hero"></span>
+                        <br class="block md:hidden">
+                        <span class="text-main h-[67px] block md:inline" id="typewriter_hero"></span>
                         <!-- الكلمات مخزنة في HTML -->
                         <div id="word-list" class="hidden">
                             <span>Idea</span>
@@ -149,12 +148,12 @@
                             Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem
                         </p>
                     </div>
-                    <div class="relative mb-3 w-full flex justify-start my-8">
+                    <div class="relative mb-3 w-full flex justify-center md:justify-start my-8">
                         <a href="./pages/test_idea.html" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:ml-4 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">
                             Start Now
                         </a>
                     </div>
-                    <div class="flex justify-between items-center w-full">
+                    <div class="flex flex-col md:flex-row justify-between items-center w-full">
                         <!-- شريط التقدم -->
                         <div class="relative mt-6 w-3/4">
                             <div id="progress-bar" class="absolute bottom-0 left-0 h-1 bg-main"></div>
@@ -261,67 +260,67 @@
                     <h3 class="text__service text-xl md:text-3xl font-semibold text-second uppercase mb-2">The Best Service We Offer</h3>
                     <p class="text__service text-dark font-light text-base leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea Takimata Sanctus Est Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
                     <div class="flex flex-col justify-start items-start my-4">
-                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
-                            <div class="flex items-center justify-center  w-1/4">
+                        <div class="service__box flex flex-col md:flex-row justify-between items-start md:items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
+                            <div class="flex items-center justify-center w-1/2  md:w-1/4">
                                 <img src="./asset/img/extra/services-01.png" alt="service" class="w-3/4">
                             </div>
                             <div class="flex flex-col flex-1 justify-start items-start my-4">
-                                <h3 class="text-2xl font-medium text-second mb-4">Technical Services & Programming</h3>
-                                <p class="text-second font-light text-sm leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                                <h3 class="text-lg md:text-2xl font-medium text-second mb-4">Technical Services & Programming</h3>
+                                <p class="text-second font-light text-xs md:text-sm  md:leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
                                 <a href="./services_show.html" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
                                     Read MORE
                                 </a>
                             </div> 
                         </div>
-                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#AEB4C0]">
-                            <div class="flex items-center justify-center  w-1/4">
+                        <div class="service__box flex flex-col md:flex-row justify-between items-start md:items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
+                            <div class="flex items-center justify-center w-1/2  md:w-1/4">
                                 <img src="./asset/img/extra/services-02.png"  alt="service" class="w-3/4">
                             </div>
                             <div class="flex flex-col flex-1 justify-start items-start my-4">
-                                <h3 class="text-2xl font-medium text-second mb-4">Training</h3>
-                                <p class="text-second font-light text-sm leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                                <h3 class="text-lg md:text-2xl font-medium text-second mb-4">Training</h3>
+                                <p class="text-second font-light text-xs md:text-sm  md:leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
                                 <a href="./services_show.html" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
                                     Read MORE
                                 </a>
                             </div> 
                         </div>
-                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#AEB4C0]">
-                            <div class="flex items-center justify-center  w-1/4">
+                        <div class="service__box flex flex-col md:flex-row justify-between items-start md:items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
+                            <div class="flex items-center justify-center w-1/2  md:w-1/4">
                                 <img src="./asset/img/extra/services-03.png" alt="service" class="w-3/4">
                             </div>
                             <div class="flex flex-col flex-1 justify-start items-start my-4">
-                                <h3 class="text-2xl font-medium text-second mb-4">Management Consulting</h3>
-                                <p class="text-second font-light text-sm leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                                <h3 class="text-lg md:text-2xl font-medium text-second mb-4">Management Consulting</h3>
+                                <p class="text-second font-light text-xs md:text-sm  md:leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
                                 <a href="./services_show.html" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
                                     Read MORE
                                 </a>
                             </div> 
                         </div>
-                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#AEB4C0]">
-                            <div class="flex items-center justify-center  w-1/4">
+                        <div class="service__box flex flex-col md:flex-row justify-between items-start md:items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
+                            <div class="flex items-center justify-center w-1/2  md:w-1/4">
                                 <img src="./asset/img/extra/services-04.png" alt="service" class="w-3/4">
                             </div>
                             <div class="flex flex-col flex-1 justify-start items-start my-4">
-                                <h3 class="text-2xl font-medium text-second mb-4">Business Development</h3>
-                                <p class="text-second font-light text-sm leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                                <h3 class="text-lg md:text-2xl font-medium text-second mb-4">Business Development</h3>
+                                <p class="text-second font-light text-xs md:text-sm  md:leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
                                 <a href="./services_show.html" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
                                     Read MORE
                                 </a>
                             </div> 
                         </div>
-                        <div class="service__box flex justify-between items-center gap-4 h-full p-3 border-b border-[#AEB4C0]">
-                            <div class="flex items-center justify-center  w-1/4">
+                        <div class="service__box flex flex-col md:flex-row justify-between items-start md:items-center gap-4 h-full p-3 border-y border-[#AEB4C0]">
+                            <div class="flex items-center justify-center w-1/2  md:w-1/4">
                                 <img src="./asset/img/extra/services-05.png" alt="service" class="w-3/4">
                             </div>
                             <div class="flex flex-col flex-1 justify-start items-start my-4">
-                                <h3 class="text-2xl font-medium text-second mb-4">Data Analysis & Presentation</h3>
-                                <p class="text-second font-light text-sm leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
+                                <h3 class="text-lg md:text-2xl font-medium text-second mb-4">Data Analysis & Presentation</h3>
+                                <p class="text-second font-light text-xs md:text-sm  md:leading-6">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt</p>
                                 <a href="./services_show.html" class="my-2 text-main underline hover:pl-2 transition-all delay-150 ease-in">
                                     Read MORE
                                 </a>
                             </div> 
                         </div>
-                        <div class="service__box relative my-8 w-full flex justify-start">
+                        <div class="service__box relative my-8 w-full flex justify-center md:justify-start">
                             <a href="./pages/services.html" class="mt-2 inline-block px-16 py-4 text-white bg-main hover:bg-second hover:ml-4 focus:bg-second active:bg-second transition-all duration-150 ease-in-out">Show All</a>
                         </div>
                     </div>
@@ -361,7 +360,7 @@
                 </div>
                 <!-- Right -->
                 <div class="flex flex-col flex-auto justify-start items-center md:items-start  md:w-2/3 md:pl-10">
-                    <div class="top__files flex justify-between items-center w-full">
+                    <div class="top__files flex flex-col md:flex-row justify-between items-center w-full">
                         <!-- شريط التقدم -->
                         <div class="relative mt-6 w-3/4">
                             <div id="progress-bar-files" class="absolute bottom-0 left-0 h-1 bg-main"></div>
@@ -601,7 +600,7 @@
             <div class="flex flex-col justify-center items-center center__partners">
                 <h3 class="text-xl md:text-3xl font-semibold text-second mb-2">Tech Touch</h3>
                 <h2 class="text-5xl md:text-7xl font-semibold text-main uppercase mb-2">partners</h2>
-                <p class="text-dark font-light text-base leading-6 text-center w-[165%]">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
+                <p class="text-dark font-light text-base leading-6 text-center w-[140%] md:w-[165%]">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat</p>
             </div>
             <div class="right_partners">
                 <svg xmlns="http://www.w3.org/2000/svg" width="677.327" height="136.595" viewBox="0 0 677.327 136.595">
@@ -647,7 +646,7 @@
         <div class="container py-16">
             <div class="flex flex-col justify-center items-center">
                 <h3 class="text-xl md:text-4xl font-semibold text-main mb-2 text__work">Work</h3>
-                <h2 class="text-3xl md:text-5xl font-semibold text-white uppercase mb-2 text__work">Improve & Enhance <br> the Tech Projects</h2>
+                <h2 class="text-3xl md:text-5xl font-semibold text-white uppercase mb-2 text__work text-center md:text-left">Improve & Enhance <br> the Tech Projects</h2>
             </div>
             <div class="swiper p-0">
                 <div class="slider-wrapper">
@@ -917,7 +916,7 @@
     <section class="mt-10 relative">
         <div class="container py-10">
             <div class="flex flex-col justify-center items-center">
-                <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2">CLIENT'S FEEDBACK</h2>
+                <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2 text-center">CLIENT'S FEEDBACK</h2>
                 <h3 class="text__client text-xl md:text-3xl font-semibold text-second mb-2">What People Say About Us</h3>
             </div>
         </div>
@@ -926,17 +925,17 @@
                 <!-- الصور (التحكم بالسلايدر) -->
                 <div class="mt-6">
                     <div class="image-slider" id="image-slider">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 1" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="1">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 2" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="2">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 3" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer active img__client" data-client="3">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 4" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="4">
-                        <img src="./asset/img/extra/client-01.png" alt="Client 5" class="w-20 h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="5">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 1" class="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="1">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 2" class="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="2">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 3" class="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-teal-500 cursor-pointer active img__client" data-client="3">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 4" class="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="4">
+                        <img src="./asset/img/extra/client-01.png" alt="Client 5" class="w-12 h-12 md:w-20 md:h-20 rounded-full border-2 border-teal-500 cursor-pointer inactive img__client" data-client="5">
                     </div>
                 </div>
             </div>
         
             <!-- المراجعات -->
-            <div class="review__arrow relative mt-8 bg-teal-50 p-6 rounded-lg shadow-md text-center w-1/4">
+            <div class="review__arrow relative mt-8 bg-teal-50 p-6 rounded-lg shadow-md text-center w-[80%]">
                 <div class="review__arrow absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[22px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="23" viewBox="0 0 63 23">
                         <path id="Polygon_28" data-name="Polygon 28" d="M31.5,0,63,23H0Z" fill="#ebebeb"/>
@@ -1040,12 +1039,12 @@
                 <div class="flex flex-col flex-1 justify-start items-start my-4">
                     <h3 class="text-3xl text-second uppercase mb-4 top__footer">Pages</h3>
                     <div class="flex justify-between items-start w-full">
-                    <ul class="flex flex-col justify-start items-start w-1/2">
-                            <li class="links__footer my-1"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
-                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
-                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
-                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
-                            <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
+                        <ul class="flex flex-col justify-start items-start w-1/2">
+                                <li class="links__footer my-1"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
+                                <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
+                                <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
+                                <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
+                                <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
                         </ul>
                         <ul class="flex flex-col justify-start items-start w-1/2">
                             <li class="links__footer my-1"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/terms_conditions.html">Terms Of Payment</a></li>
@@ -1079,6 +1078,30 @@
             <p class="text-[#909090] font-light text-base uppercase">© All Copyright 2023 by tech touch</p>
         </div>
     </footer>
+
+    <div data-twe-modal-init class="fixed left-0 top-0 z-[1055] hidden h-[100vh] w-full overflow-y-auto overflow-x-hidden outline-none pr-0" id="NavBar" tabindex="-1" aria-labelledby="NavBar" aria-modal="true" role="dialog">
+        <div data-twe-modal-dialog-ref class="pointer-events-none relative w-auto h-full translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-8 min-[576px]:max-w-[500px] min-[992px]:max-w-[666px] my-5 mx-4 flex justify-center items-center">
+            <div class="pointer-events-auto relative flex w-[86%] flex-col border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark rounded-2xl">
+                <!-- Modal body -->
+                <div class="relative p-4">
+                    <ul class="flex flex-col justify-start items-start w-100">
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-main pl-2 hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in font-light uppercase text-base" href="./index.html">Home</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/about.html">About Us</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/services.html">Services</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/portfolios.html">Portfolio</a></li>
+                        <li class="my-1 py-2 w-full border-b broder-gray-300"><a class="text-black hover:text-main hover:font-semibold hover:pl-2 transition-all delay-150 ease-in  font-light uppercase text-base" href="./pages/files.html">Files</a></li>
+                    </ul>   
+                    <div class="right__hero relative !flex items-center justify-center py-2">
+                        <div class="relative group">
+                            <a href="./pages/free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
+                            Free Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JS Scripts -->
     <!-- JQuery -->

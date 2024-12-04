@@ -19,6 +19,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+    padding: 0 !important;
 }
 
 .container {
@@ -28,6 +29,14 @@ body {
     padding-right: 15px;
     width: 87%;
 }
+@media (max-width: 780px) {
+    .container{
+        width: 95%;
+        max-width: 100%;
+    }
+}
+
+
 
 
 
@@ -275,4 +284,9 @@ body {
 
 .img__partners{
     width: 13%;
+}
+@media (max-width: 780px) {
+    .img__partners{
+        width: 35%;
+    }
 }
