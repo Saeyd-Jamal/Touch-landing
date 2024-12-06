@@ -29,7 +29,7 @@
     <header>
         <!-- Main navigation container -->
         <nav class="flex-no-wrap relative flex w-full items-center justify-between bg-white py-2 lg:flex-wrap lg:justify-center lg:py-4">
-            <div class="md:container flex w-full flex-wrap items-center justify-between px-3">
+            <div class="container flex w-full flex-wrap items-center justify-between px-3">
 
                 <!-- Logo -->
                 <a class="logo__hero mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="../index.html">
@@ -215,19 +215,21 @@
                 <div class="hidden md:flex flex-col md:justify-start img-about" style="flex: 1 1 40%;">
                     <h2 class="top__section_second text-7xl font-semibold text-main uppercase mb-2">Video</h2>
                     <h3 class="top__section_second text-3xl font-semibold text-second uppercase mb-8">Demonstration</h3>
-                    <div class="img__section__second hexagon-container">
+                    <div class="img__section__second hexagon-container" data-twe-toggle="modal" data-twe-target="#viewVideo" data-twe-ripple-init data-twe-ripple-color="light">
                         <!-- SVG للشكل السداسي بحدود متقطعة -->
                         <svg width="620" height="590" viewBox="0 0 100 100">
                             <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#43516D" stroke-width="0.3" stroke-dasharray="0.7" />
                         </svg>
                         <!-- العنصر الداخلي -->
                         <div class="hexagon-content group">
-                            <video width="800" id="myVideo" class="w-full h-full object-cover" style="transform:rotate(90deg);" autoplay loop muted>
+                            <video width="800" id="myVideo" class="w-full h-full object-cover" style="transform:rotate(90deg);">
                                 <source src="../asset/فيديو موشن جرافيك إعلاني قصير .mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <!-- زر التشغيل / الإيقاف -->
-                            <button id="playPauseBtn" style="transform:rotate(90deg) translate(-50%,-50%);"  class="playPauseButton group-hover:block hidden absolute top-1/2 left-[38%]  text-white text-3xl bg-black bg-opacity-50 rounded-full p-5 cursor-pointer transition-all delay-250 ease-in hover:bg-opacity-70">
+                            <button 
+                            style="transform:rotate(90deg) translate(-50%,-50%);"  
+                            class="playPauseButton group-hover:block hidden absolute top-1/2 left-[38%]  text-white text-3xl bg-black bg-opacity-50 rounded-full p-5 cursor-pointer transition-all delay-250 ease-in hover:bg-opacity-70">
                                 ❚❚
                             </button>
                         </div>
@@ -311,6 +313,24 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-twe-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        id="viewVideo" tabindex="-1" aria-labelledby="viewVideoLabel" aria-hidden="true">
+        <div data-twe-modal-dialog-ref
+            class="pointer-events-none w-full h-full flex items-center justify-center relative translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out">
+            <div
+                class="pointer-events-auto relative flex w-[75%] flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
+                <!-- Modal body -->
+                <div class="relative flex-auto p-4" data-twe-modal-body-ref>
+                    <video width="100%" class="w-full object-cover" controls >
+                        <source src="../asset/فيديو موشن جرافيك إعلاني قصير .mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
