@@ -221,17 +221,8 @@
                             <polygon points="25,6.7,75 6.7,100 50,75 93.3,25 93.3,0 50" fill="none" stroke="#43516D" stroke-width="0.3" stroke-dasharray="0.7" />
                         </svg>
                         <!-- العنصر الداخلي -->
-                        <div class="hexagon-content group">
-                            <video width="800" id="myVideo" class="w-full h-full object-cover" style="transform:rotate(90deg);">
-                                <source src="../asset/فيديو موشن جرافيك إعلاني قصير .mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <!-- زر التشغيل / الإيقاف -->
-                            <button 
-                            style="transform:rotate(90deg) translate(-50%,-50%);"  
-                            class="playPauseButton group-hover:block hidden absolute top-1/2 left-[38%]  text-white text-3xl bg-black bg-opacity-50 rounded-full p-5 cursor-pointer transition-all delay-250 ease-in hover:bg-opacity-70">
-                                ❚❚
-                            </button>
+                        <div class="hexagon-content">
+                            <img src="../asset/img/extra/about-2.png" style="transform:rotate(90deg);" alt=""  class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -378,26 +369,5 @@
         sr.reveal(`.left__section__second`, { origin: 'left' });
         sr.reveal(`.img__section__second`, { origin: 'bottom' });
     </script>
-    <script>
-        // التعامل مع الضغط على الزر باستخدام jQuery
-        $(document).ready(function() {
-            // التعامل مع الضغط على الزر
-            $('#playPauseBtn').click(function() {
-                var video = $('#myVideo')[0];  // الحصول على العنصر الفيديو
-                if (video) {
-                    if (video.paused) {
-                        video.play();   // تشغيل الفيديو
-                        $('#playPauseBtn').html('❚❚');  // تغيير الزر إلى إيقاف
-                    } else {
-                        video.pause();  // إيقاف الفيديو
-                        $('#playPauseBtn').html('▶');   // تغيير الزر إلى تشغيل
-                    }
-                }
-            });
-        });
-
-    </script>
-
-
 </body>
 </html>
