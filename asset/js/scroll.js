@@ -18,6 +18,6 @@ sr.reveal(`.service__box`, { interval: 200,origin: 'left' }); // عدة عناص
 sr.reveal(`.right__hero, .img__hero, .text__about, .img__service , .right_partners , .right__work`, { origin: 'right' });
 
 // origin : bottom
-sr.reveal(`.center__partners , .review__arrow , .bottom__footer`, { origin: 'bottom' });
+sr.reveal(`.center__partners , .review__arrow`, { origin: 'bottom' });
 sr.reveal(`.links__footer`, { interval: 100,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
 sr.reveal(`.card__about, .card__file , .img__partners , .top__work`, { interval: 200,origin: 'bottom' }); // عدة عناصر والانتظار بينهم
