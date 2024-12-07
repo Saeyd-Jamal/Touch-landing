@@ -1157,6 +1157,22 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
+.\!w-\[70\%\] {
+  width: 70% !important;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[100\] {
+  width: 100;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -2803,6 +2819,14 @@ input[type="range"]:active::-webkit-slider-thumb {
     width: 30%;
   }
 
+  .md\:w-\[125\%\] {
+    width: 125%;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2841,6 +2865,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
   .md\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
   }
 
   .md\:text-left {
