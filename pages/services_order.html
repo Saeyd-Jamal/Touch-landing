@@ -23,6 +23,7 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/pages/from.css">
 
 </head>
 <body class="min-h-screen relative overflow-x-hidden" style="padding-right: 0 !important;">
@@ -140,17 +141,6 @@
     </div>
 
     <!-- Content -->
-    <style>
-        /* edit input in forms */
-        [data-twe-input-notch-ref] {
-            /* direction: rtl; */
-            border: none;
-        }
-        [data-twe-input-notch-leading-ref],[data-twe-input-notch-middle-ref],[data-twe-input-notch-trailing-ref]
-        {
-            border: transparent !important;
-        }
-    </style>
     <section class="my-6">
         <div class="container">
             <h2 class="text-5xl font-semibold text-main uppercase mb-2 left__title">Service Name</h2>
@@ -283,14 +273,6 @@
     <script src="../asset/js/scroll.js"></script>
 
     <!-- My JS -->
-    <script src="../asset/js/main.js"></script>
-
-    <script>
-        // left__title , top__form , left__form , right__form , bottom__form
-        sr.reveal(`.top__form `);
-        sr.reveal(`.left__title , .left__form`, { origin: 'left' , interval: 100 });
-        sr.reveal(`.right__form`, { origin: 'right' });
-        sr.reveal(`.bottom__form`, { origin: 'bottom' , interval: 100 });
-    </script>
+    <script src="../asset/js/pages/pagesScroller2.js"></script>
 </body>
 </html>
