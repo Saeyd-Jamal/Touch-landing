@@ -23,6 +23,7 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/pages/from.css">
 </head>
 <body class="min-h-screen relative overflow-x-hidden" style="padding-right: 0 !important;">
     <!-- Header -->
@@ -133,17 +134,6 @@
     <!-- Content -->
     <section class="my-20">
         <div class="container">
-            <style>
-                /* edit input in forms */
-                [data-twe-input-notch-ref] {
-                    /* direction: rtl; */
-                    border: none;
-                }
-                [data-twe-input-notch-leading-ref],[data-twe-input-notch-middle-ref],[data-twe-input-notch-trailing-ref]
-                {
-                    border: transparent !important;
-                }
-            </style>
             <div class="flex flex-wrap justify-between items-start gap-20">
                 <!-- Text -->
                 <div class="flex flex-col flex-1/2 justify-start items-center md:items-start text-center md:text-left pr-8">
@@ -302,12 +292,6 @@
 
     <!-- My JS -->
     <script src="../asset/js/main.js"></script>
-
-    <script>
-        sr.reveal(`.top__contact`);
-        sr.reveal(`.text__contact`, { origin: 'left' });
-        sr.reveal(`.right__contact`, { origin: 'right' });
-        sr.reveal(`.bottom__contact`, { origin: 'bottom' });
-    </script>
+    <script src="../asset/js/pages/pagesScroller.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@ gsap.from(".text__footer", {
     duration: 2,
 });
 
-gsap.from(".bottom__footer", {
+gsap.from(".w", {
     scrollTrigger: {
         trigger: "footer",
         start: "top 85%",
