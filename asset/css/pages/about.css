@@ -2,6 +2,10 @@
     width: 620px;
     height: 590px;
 }
+.card__about.hexagon-container svg{
+    width: 620px;
+    height: 300px;
+}
 @media (max-width: 780px) {
     .hexagon-container{
         width: 320px !important;
