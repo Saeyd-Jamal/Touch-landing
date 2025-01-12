@@ -57,4 +57,26 @@ $(document).ready(function () {
     });
 
     showStep(currentStep); // تهيئة الخطوة الأولى
+
+
+    function convertToRtl(enabled) {
+        if (enabled) {
+            $('html').attr('dir', 'rtl');
+            // $('.content-second').addClass('md:pl-8').removeClass('md:pr-8');
+            // index
+    
+            // hero
+            
+        } else {
+            $('html').attr('dir', 'ltr');
+            // $('.content-second').removeClass('md:pl-8').addClass('md:pr-8');
+        }
+    }
+    
+    // true is rtl
+    let lang = false;
+    $('#convertLang').on('click',function(){
+        convertToRtl(!lang);
+        lang = !lang;
+    });
 });

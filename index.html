@@ -80,6 +80,7 @@
 
                 <!-- Right elements -->
                 <div class="right__hero relative hidden lg:!flex items-center ">
+                    
                     <div class="relative group">
                         <a href="./pages/free_consultation.html" class="inline-block bg-second px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-dark hover:shadow-md focus:bg-dark focus:shadow-md focus:outline-none focus:ring-0 active:bg-dark active:shadow-md motion-reduce:transition-none">
                         Free Consultation
@@ -88,6 +89,9 @@
                             <img src="./asset/img/icon/arrow-down.png" alt="" width="33px">
                         </div>
                     </div>
+                    <button  type="button" id="convertLang" style="font-size: 28px;" class="block border-0 bg-transparent px-4 text-black/50 hover:text-main hover:shadow-none">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
                 </div>
                 <!-- Right elements -->
                 <!-- Hamburger button for mobile view -->
@@ -123,14 +127,17 @@
                 <!-- Text -->
                 <div class="text__hero flex flex-col  flex-1/2 justify-start items-center md:items-start">
                     <h1 class="text-5xl md:text-[5rem] font-bold">
-                        <span class="text-second">Test Your</span> 
+                        <span class="text-second" id="hero-title">Test Your</span> 
                         <br class="block md:hidden">
                         <span class="text-main h-[67px] block md:inline" id="typewriter_hero"></span>
                         <!-- الكلمات مخزنة في HTML -->
                         <div id="word-list" class="hidden">
-                            <span>Idea</span>
-                            <span>Plan</span>
-                            <span>Project</span>
+                            <span class="en">Idea</span>
+                            <span class="en">Plan</span>
+                            <span class="en">Project</span>
+                            <span class="ar" style="display:none;">فكرة</span>
+                            <span class="ar" style="display:none;">خطة</span>
+                            <span class="ar" style="display:none;">مشروع</span>
                         </div>
                     </h1>
                     <div id="hero-texts" class="relative space-y-4 mt-4">
@@ -240,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <div class="partial__about hidden lg:block absolute -left-[11rem] top-[-304px] -z-10">
+        <div class="partial__about hidden lg:block absolute -let-[11rem] top-[-304px] -z-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="1494.982" viewBox="0 0 908.968 1494.982">
                 <g id="Path_18858" data-name="Path 18858" transform="translate(-879.186 2064.982) rotate(-90)" fill="#43516d" stroke-dasharray="5">
                     <path d="M2064.982,879.186l-521.073,908.968H1091.073L570,879.186Z" stroke="none"/>
@@ -251,7 +258,7 @@
     </section>
 
     <!-- Services -->
-    <section class="relative my-6">
+    <section class="relative my-6" id="services">
         <div class="container">
             <div class=" w-full flex flex-wrap justify-between items-center md:items-start">
                 <div class="flex-1/2">
@@ -334,7 +341,7 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block absolute right-0 top-0 -z-10">
+        <div class="hidden lg:block absolute right-0 top-0 -z-10 part">
             <svg xmlns="http://www.w3.org/2000/svg" width="428.808" height="836.905" viewBox="0 0 428.808 836.905">
                 <path id="Path_12186" data-name="Path 12186" d="M590.7,428.808,836.905,0H0L246.2,428.808Z" transform="translate(428.808) rotate(90)" fill="#ebebeb"/>
             </svg>
@@ -342,9 +349,9 @@
     </section>
 
     <!-- files -->
-    <section class="my-6 relative">
+    <section class="my-6 relative" id="files">
         <div class="container w-full">
-            <div class="flex flex-wrap justify-between items-center md:items-start text-center md:text-left">
+            <div class="flex flex-wrap justify-between items-center md:items-start text-center div md:text-left">
                 <!-- left -->
                 <div class="flex flex-col justify-center img-about md:w-1/3 md:pr-10">
                     <h2 class="left__files text-4xl md:text-7xl font-bold text-main uppercase mb-2">
@@ -589,7 +596,7 @@
     </section>
 
     <!-- partners -->
-    <section class="mt-[102px] mb-[169px] relative">
+    <section class="mt-[102px] mb-[169px] relative" id="partners">
         <div class="flex justify-center items-end overflow-hidden">
             <div class="left_partners">
                 <svg xmlns="http://www.w3.org/2000/svg" width="677.327" height="136.595" viewBox="0 0 677.327 136.595">
@@ -641,7 +648,7 @@
     </section>
 
     <!-- works -->
-    <section class="my-6 relative" style="background-image: url(./asset/img/extra/work_bg.png);">
+    <section class="my-6 relative" style="background-image: url(./asset/img/extra/work_bg.png);" id="works">
         <div class="container py-16">
             <div class="flex flex-col justify-center items-center">
                 <h3 class="text-xl md:text-4xl font-semibold text-main mb-2 text__work">Work</h3>
@@ -785,8 +792,11 @@
         </div>
     </section>
 
+    <span class="!rotate-180 -right-[15rem] "></span>
+    <span class="-left-[11rem]"></span>
+
     <!-- our team -->
-    <section class="my-10 relative">
+    <section class="my-10 relative" id="teams">
         <div class="container py-10">
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2">OUR TEAM</h2>
@@ -912,7 +922,7 @@
     </section>
 
     <!-- client's feedback -->
-    <section class="mt-10 relative">
+    <section class="mt-10 relative" id="clients">
         <div class="container py-10">
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text__client text-5xl md:text-7xl font-semibold text-main uppercase mb-2 text-center">CLIENT'S FEEDBACK</h2>
@@ -1116,7 +1126,7 @@
     <!-- <script src="./asset/js/plugins/scrollreveal.min.js"></script> -->
     <script src="./asset/js/plugins/gsap.min.js"></script>
     <script src="./asset/js/plugins/ScrollTrigger.min.js"></script>
-
+    
     <!-- Scroll Anemation All sections -->
     <script src="./asset/js/scrollGsap.js"></script>
 

@@ -1,41 +1,6 @@
 
 // <!-- Hero -->
 $(document).ready(function () {
-    // كتابة النص العلوي
-    let words = [];
-    let i = 0;
-    let j = 0;
-    let currentWord = "";
-    let isDeleting = false;
-
-    // جلب الكلمات من HTML
-    $("#word-list span").each(function () {
-        words.push($(this).text());
-    });
-    function type() {
-        currentWord = words[i];
-        if (isDeleting) {
-            $("#typewriter_hero").text(currentWord.substring(0, j - 1));
-            j--;
-            if (j == 0) {
-                isDeleting = false;
-                i++;
-                if (i == words.length) {
-                    i = 0;
-                }
-            }
-        } else {
-            $("#typewriter_hero").text(currentWord.substring(0, j + 1));
-            j++;
-            if (j == currentWord.length) {
-                isDeleting = true;
-            }
-        }
-        setTimeout(type, 300);
-    }
-    type();
-});
-$(document).ready(function () {
     // استهداف جميع عناصر الفقرات داخل القسم
     const $paragraphs = $('#hero-texts .hero-paragraph');
     const totalParagraphs = $paragraphs.length;
@@ -301,3 +266,132 @@ $(document).ready(function () {
         updateContent(clientId);  // تحديث النصوص
     });
 });
+$(document).ready(function () {
+    // كتابة النص العلوي
+    let words = [];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function wirteWord(lang){
+        // جلب الكلمات من HTML
+        words = [];
+        $("#word-list span." + lang).each(function () {
+            words.push($(this).text());
+        });
+    }
+    function type() {
+        currentWord = words[i];
+        if (isDeleting) {
+            $("#typewriter_hero").text(currentWord.substring(0, j - 1));
+            j--;
+            if (j == 0) {
+                isDeleting = false;
+                i++;
+                if (i == words.length) {
+                    i = 0;
+                }
+            }
+        } else {
+            $("#typewriter_hero").text(currentWord.substring(0, j + 1));
+            j++;
+            if (j == currentWord.length) {
+                isDeleting = true;
+            }
+        }
+        setTimeout(type, 300);
+    }
+    wirteWord('en');
+    type()
+    function convertToRtl(enabled) {
+        if (enabled) {
+            $('html').attr('dir', 'rtl');
+            // index
+    
+            // hero
+            $('.img__hero img').css('transform', 'rotateY(180deg)');
+            $('#hero-title').text('جرب فكرتك');
+            $('#word-list span.ar').slideDown();
+            $('#word-list span.en').slideUp();
+            wirteWord('ar');
+            type();
+    
+            // about
+            $('.partial__about').removeClass('-left-[11rem]');
+            $('.partial__about').addClass('-right-[15rem]');
+            $('.partial__about').addClass('!rotate-180');
+    
+            // Services
+            $('.img__service:eq(1) img').css('transform', 'rotateY(180deg)');
+            $('#services .part').css('transform', 'rotateY(180deg)');
+            $('#services .part').removeClass('right-0');
+            $('#services .part').addClass('left-0');
+    
+            // Files
+            $('#files .partial__files').addClass('!rotate-180');
+            $('#files .partial__files').removeClass('left-0');
+            $('#files .partial__files').addClass('right-0');
+            $('#files .div').removeClass('md:text-left');
+            $('#files .div').addClass('md:text-right');
+            $('#files .div .img-about').removeClass('md:pr-10');
+            $('#files .div .img-about').addClass('md:pl-10');
+            $('#files .div img').css('transform', 'rotateY(180deg)');
+    
+            // Other
+            $('#partners').css('direction', 'ltr');
+            $('#works').css('direction', 'ltr');
+            $('#works h2').removeClass('md:text-left').addClass('md:text-right');
+            $('#works .swiper-slide').removeClass('items-start').addClass('items-end');
+            $('#teams').css('direction', 'ltr');
+            $('#clients').css('direction', 'ltr');
+        } else {
+            $('html').attr('dir', 'ltr');
+    
+            // hero
+            $('.img__hero img').css('transform', 'rotateY(0deg)');
+            $('#hero-title').text('Test Your');
+            $('#word-list span.ar').slideUp();
+            $('#word-list span.en').slideDown();
+            wirteWord('en');
+            type();
+    
+            // about
+            $('.partial__about').addClass('-left-[11rem]');
+            $('.partial__about').removeClass('-right-[15rem]');
+            $('.partial__about').removeClass('!rotate-180');
+    
+            // Services
+            $('.img__service:eq(1) img').css('transform', 'rotateY(0deg)');
+            $('#services .part').css('transform', 'rotateY(0deg)');
+            $('#services .part').addClass('right-0');
+            $('#services .part').removeClass('left-0');
+    
+            // Files
+            $('#files .partial__files').removeClass('!rotate-180');
+            $('#files .partial__files').addClass('left-0');
+            $('#files .partial__files').removeClass('right-0');
+            $('#files .div').addClass('md:text-left');
+            $('#files .div').removeClass('md:text-right');
+            $('#files .div .img-about').addClass('md:pr-10');
+            $('#files .div .img-about').removeClass('md:pl-10');
+            $('#files .div img').css('transform', 'rotateY(0deg)');
+    
+            // Other
+            // $('#partners').css('direction', 'rtl');
+            // $('#works').css('direction', 'rtl');
+            $('#works h2').addClass('md:text-left').removeClass('md:text-right');
+            $('#works .swiper-slide').addClass('items-start').removeClass('items-end');
+            // $('#teams').css('direction', 'rtl');
+            // $('#clients').css('direction', 'rtl');
+        }
+    }
+    
+    // true is rtl
+    let lang = false;
+    $('#convertLang').on('click',function(){
+        convertToRtl(!lang);
+        lang = !lang;
+    });
+});
+
