@@ -319,8 +319,10 @@ $(document).ready(function () {
     
             // about
             $('.partial__about').removeClass('-left-[11rem]');
-            $('.partial__about').addClass('-right-[15rem]');
+            $('.partial__about').addClass('-right-[17rem]');
             $('.partial__about').addClass('!rotate-180');
+            $('.content').addClass('text-right');
+
     
             // Services
             $('.img__service:eq(1) img').css('transform', 'rotateY(180deg)');
@@ -358,8 +360,9 @@ $(document).ready(function () {
     
             // about
             $('.partial__about').addClass('-left-[11rem]');
-            $('.partial__about').removeClass('-right-[15rem]');
+            $('.partial__about').removeClass('-right-[17rem]');
             $('.partial__about').removeClass('!rotate-180');
+            $('.content').removeClass('text-right');
     
             // Services
             $('.img__service:eq(1) img').css('transform', 'rotateY(0deg)');

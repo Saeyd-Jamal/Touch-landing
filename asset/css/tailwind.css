@@ -746,12 +746,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   left: -11rem;
 }
 
-.-right-\[15rem\] {
-  right: -15rem;
-}
-
 .-right-\[16px\] {
   right: -16px;
+}
+
+.-right-\[17rem\] {
+  right: -17rem;
 }
 
 .-top-16 {
@@ -768,10 +768,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .left-1\/2 {
   left: 50%;
-}
-
-.left-3 {
-  left: 0.75rem;
 }
 
 .right-0 {
@@ -1169,10 +1165,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-width: 267px;
 }
 
-.max-w-\[90\%\] {
-  max-width: 90%;
-}
-
 .max-w-\[calc\(100\%-1rem\)\] {
   max-width: calc(100% - 1rem);
 }
@@ -1215,10 +1207,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .basis-auto {
   flex-basis: auto;
-}
-
-.origin-\[0_0\] {
-  transform-origin: 0 0;
 }
 
 .-translate-x-1\/2 {
@@ -1432,12 +1420,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .whitespace-normal {
@@ -1845,10 +1827,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-left {
@@ -2476,17 +2454,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   opacity: 1;
 }
 
-.peer:focus ~ .peer-focus\:-translate-y-\[0\.9rem\] {
-  --tw-translate-y: -0.9rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:focus ~ .peer-focus\:scale-\[0\.8\] {
-  --tw-scale-x: 0.8;
-  --tw-scale-y: 0.8;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .peer:focus ~ .peer-focus\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
@@ -2607,17 +2574,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.peer[data-twe-input-state-active] ~ .peer-data-\[twe-input-state-active\]\:-translate-y-\[0\.9rem\] {
-  --tw-translate-y: -0.9rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer[data-twe-input-state-active] ~ .peer-data-\[twe-input-state-active\]\:scale-\[0\.8\] {
-  --tw-scale-x: 0.8;
-  --tw-scale-y: 0.8;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (prefers-reduced-motion: reduce) {
   .motion-reduce\:transition-none {
     transition-property: none;
@@ -2641,11 +2597,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .dark\:text-neutral-200:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 229 229 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-neutral-400:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
